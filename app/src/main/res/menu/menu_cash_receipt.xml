@@ -1,0 +1,63 @@
+<menu xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    tools:context="skybiz.com.posoffline.ui_CashReceipt.CashReceipt">
+    <item
+        android:id="@+id/mnCustomer"
+        android:orderInCategory="100"
+        android:title="@string/mnCustomer"
+        app:showAsAction="never" />
+
+    <item
+        android:id="@+id/mnSalesPerson"
+        android:orderInCategory="100"
+        android:title="@string/mnSalesPerson"
+        app:showAsAction="never" />
+
+    <item
+        android:id="@+id/mnItem"
+        android:orderInCategory="100"
+        android:title="@string/mnItem"
+        app:showAsAction="never" />
+
+    <item
+        android:id="@+id/mnPaymentNote"
+        android:orderInCategory="100"
+        android:title="Payment Note"
+        app:showAsAction="never" />
+
+    <item
+        android:id="@+id/mnGuestCheck"
+        android:orderInCategory="100"
+        android:title="@string/mnGuestCheck"
+        app:showAsAction="never" />
+    <item
+        android:id="@+id/mnOrderSlip"
+        android:orderInCategory="100"
+        android:title="@string/mnOrderSlip"
+        app:showAsAction="never" />
+    <item
+        android:id="@+id/mnReprint2"
+        android:orderInCategory="100"
+        android:title="@string/mnReprint2"
+        app:showAsAction="never" />
+    <item
+        android:id="@+id/mnReprint"
+        android:orderInCategory="100"
+        android:title="@string/mnReprint"
+        app:showAsAction="never" />
+
+    <item
+        android:id="@+id/mnReset"
+        android:orderInCategory="100"
+        android:title="@string/mnReset"
+        app:showAsAction="never" />
+    <item
+        android:id="@+id/mnVoidBill"
+        android:orderInCategory="100"
+        android:title="@string/mnVoid"
+        app:showAsAction="never" />
+
+
+
+</menu>

@@ -1,0 +1,275 @@
+<wsdl:definitions xmlns:wsdl="http://schemas.xmlsoap.org/wsdl/" xmlns:wsap="http://schemas.xmlsoap.org/ws/2004/08/addressing/policy" xmlns:wsa10="http://www.w3.org/2005/08/addressing" xmlns:tns="https://www.mobile88.com" xmlns:msc="http://schemas.microsoft.com/ws/2005/12/wsdl/contract" xmlns:soapenc="http://schemas.xmlsoap.org/soap/encoding/" xmlns:wsx="http://schemas.xmlsoap.org/ws/2004/09/mex" xmlns:soap="http://schemas.xmlsoap.org/wsdl/soap/" xmlns:wsam="http://www.w3.org/2007/05/addressing/metadata" xmlns:wsa="http://schemas.xmlsoap.org/ws/2004/08/addressing" xmlns:wsp="http://schemas.xmlsoap.org/ws/2004/09/policy" xmlns:wsaw="http://www.w3.org/2006/05/addressing/wsdl" xmlns:soap12="http://schemas.xmlsoap.org/wsdl/soap12/" xmlns:wsu="http://docs.oasis-open.org/wss/2004/01/oasis-200401-wss-wssecurity-utility-1.0.xsd" xmlns:xsd="http://www.w3.org/2001/XMLSchema" name="GatewayService" targetNamespace="https://www.mobile88.com">
+<wsp:Policy wsu:Id="BasicHttpsBinding_IGatewayService_policy">
+<wsp:ExactlyOne>
+<wsp:All>
+<sp:TransportBinding xmlns:sp="http://schemas.xmlsoap.org/ws/2005/07/securitypolicy">
+<wsp:Policy>
+<sp:TransportToken>
+<wsp:Policy>
+<sp:HttpsToken RequireClientCertificate="false"/>
+</wsp:Policy>
+</sp:TransportToken>
+<sp:AlgorithmSuite>
+<wsp:Policy>
+<sp:Basic256/>
+</wsp:Policy>
+</sp:AlgorithmSuite>
+<sp:Layout>
+<wsp:Policy>
+<sp:Strict/>
+</wsp:Policy>
+</sp:Layout>
+</wsp:Policy>
+</sp:TransportBinding>
+</wsp:All>
+</wsp:ExactlyOne>
+</wsp:Policy>
+<wsdl:types>
+<xs:schema xmlns:xs="http://www.w3.org/2001/XMLSchema" elementFormDefault="qualified" targetNamespace="https://www.mobile88.com">
+<xs:import namespace="http://schemas.datacontract.org/2004/07/MHPHGatewayService.Model"/>
+<xs:element name="EntryPageFunctionality">
+<xs:complexType>
+<xs:sequence>
+<xs:element xmlns:q1="http://schemas.datacontract.org/2004/07/MHPHGatewayService.Model" minOccurs="0" name="requestModelObj" nillable="true" type="q1:ClientRequestModel"/>
+</xs:sequence>
+</xs:complexType>
+</xs:element>
+<xs:element name="EntryPageFunctionalityResponse">
+<xs:complexType>
+<xs:sequence>
+<xs:element xmlns:q2="http://schemas.datacontract.org/2004/07/MHPHGatewayService.Model" minOccurs="0" name="EntryPageFunctionalityResult" nillable="true" type="q2:ClientResponseModel"/>
+</xs:sequence>
+</xs:complexType>
+</xs:element>
+</xs:schema>
+<xs:schema xmlns:xs="http://www.w3.org/2001/XMLSchema" xmlns:tns="http://schemas.microsoft.com/2003/10/Serialization/" attributeFormDefault="qualified" elementFormDefault="qualified" targetNamespace="http://schemas.microsoft.com/2003/10/Serialization/">
+<xs:element name="anyType" nillable="true" type="xs:anyType"/>
+<xs:element name="anyURI" nillable="true" type="xs:anyURI"/>
+<xs:element name="base64Binary" nillable="true" type="xs:base64Binary"/>
+<xs:element name="boolean" nillable="true" type="xs:boolean"/>
+<xs:element name="byte" nillable="true" type="xs:byte"/>
+<xs:element name="dateTime" nillable="true" type="xs:dateTime"/>
+<xs:element name="decimal" nillable="true" type="xs:decimal"/>
+<xs:element name="double" nillable="true" type="xs:double"/>
+<xs:element name="float" nillable="true" type="xs:float"/>
+<xs:element name="int" nillable="true" type="xs:int"/>
+<xs:element name="long" nillable="true" type="xs:long"/>
+<xs:element name="QName" nillable="true" type="xs:QName"/>
+<xs:element name="short" nillable="true" type="xs:short"/>
+<xs:element name="string" nillable="true" type="xs:string"/>
+<xs:element name="unsignedByte" nillable="true" type="xs:unsignedByte"/>
+<xs:element name="unsignedInt" nillable="true" type="xs:unsignedInt"/>
+<xs:element name="unsignedLong" nillable="true" type="xs:unsignedLong"/>
+<xs:element name="unsignedShort" nillable="true" type="xs:unsignedShort"/>
+<xs:element name="char" nillable="true" type="tns:char"/>
+<xs:simpleType name="char">
+<xs:restriction base="xs:int"/>
+</xs:simpleType>
+<xs:element name="duration" nillable="true" type="tns:duration"/>
+<xs:simpleType name="duration">
+<xs:restriction base="xs:duration">
+<xs:pattern value="\-?P(\d*D)?(T(\d*H)?(\d*M)?(\d*(\.\d*)?S)?)?"/>
+<xs:minInclusive value="-P10675199DT2H48M5.4775808S"/>
+<xs:maxInclusive value="P10675199DT2H48M5.4775807S"/>
+</xs:restriction>
+</xs:simpleType>
+<xs:element name="guid" nillable="true" type="tns:guid"/>
+<xs:simpleType name="guid">
+<xs:restriction base="xs:string">
+<xs:pattern value="[\da-fA-F]{8}-[\da-fA-F]{4}-[\da-fA-F]{4}-[\da-fA-F]{4}-[\da-fA-F]{12}"/>
+</xs:restriction>
+</xs:simpleType>
+<xs:attribute name="FactoryType" type="xs:QName"/>
+<xs:attribute name="Id" type="xs:ID"/>
+<xs:attribute name="Ref" type="xs:IDREF"/>
+</xs:schema>
+<xs:schema xmlns:xs="http://www.w3.org/2001/XMLSchema" xmlns:tns="http://schemas.datacontract.org/2004/07/MHPHGatewayService.Model" elementFormDefault="qualified" targetNamespace="http://schemas.datacontract.org/2004/07/MHPHGatewayService.Model">
+<xs:complexType name="ClientRequestModel">
+<xs:sequence>
+<xs:element minOccurs="0" name="ActionType" nillable="true" type="xs:string"/>
+<xs:element minOccurs="0" name="Amount" nillable="true" type="xs:string"/>
+<xs:element minOccurs="0" name="BackendURL" nillable="true" type="xs:string"/>
+<xs:element minOccurs="0" name="BarcodeNo" nillable="true" type="xs:string"/>
+<xs:element minOccurs="0" name="CCCId" nillable="true" type="xs:string"/>
+<xs:element minOccurs="0" name="CCCOriTokenId" nillable="true" type="xs:string"/>
+<xs:element minOccurs="0" name="CCMonth" nillable="true" type="xs:string"/>
+<xs:element minOccurs="0" name="CCName" nillable="true" type="xs:string"/>
+<xs:element minOccurs="0" name="CCNo" nillable="true" type="xs:string"/>
+<xs:element minOccurs="0" name="CCYear" nillable="true" type="xs:string"/>
+<xs:element minOccurs="0" name="CVV2" nillable="true" type="xs:string"/>
+<xs:element minOccurs="0" name="Currency" nillable="true" type="xs:string"/>
+<xs:element minOccurs="0" name="MTLogId" nillable="true" type="xs:string"/>
+<xs:element minOccurs="0" name="MTVersion" nillable="true" type="xs:string"/>
+<xs:element minOccurs="0" name="MerchantCode" nillable="true" type="xs:string"/>
+<xs:element minOccurs="0" name="PaymentId" type="xs:int"/>
+<xs:element minOccurs="0" name="ProdDesc" nillable="true" type="xs:string"/>
+<xs:element minOccurs="0" name="RefNo" nillable="true" type="xs:string"/>
+<xs:element minOccurs="0" name="Remark" nillable="true" type="xs:string"/>
+<xs:element minOccurs="0" name="Signature" nillable="true" type="xs:string"/>
+<xs:element minOccurs="0" name="SignatureType" nillable="true" type="xs:string"/>
+<xs:element minOccurs="0" name="TerminalID" nillable="true" type="xs:string"/>
+<xs:element minOccurs="0" name="TokenId" nillable="true" type="xs:string"/>
+<xs:element minOccurs="0" name="UserContact" nillable="true" type="xs:string"/>
+<xs:element minOccurs="0" name="UserEmail" nillable="true" type="xs:string"/>
+<xs:element minOccurs="0" name="UserName" nillable="true" type="xs:string"/>
+<xs:element minOccurs="0" name="forexRate" nillable="true" type="xs:string"/>
+<xs:element minOccurs="0" name="lang" nillable="true" type="xs:string"/>
+<xs:element minOccurs="0" name="xfield1" nillable="true" type="xs:string"/>
+<xs:element minOccurs="0" name="xfield2" nillable="true" type="xs:string"/>
+</xs:sequence>
+</xs:complexType>
+<xs:element name="ClientRequestModel" nillable="true" type="tns:ClientRequestModel"/>
+<xs:complexType name="ClientResponseModel">
+<xs:sequence>
+<xs:element minOccurs="0" name="ActionType" nillable="true" type="xs:string"/>
+<xs:element minOccurs="0" name="Amount" nillable="true" type="xs:string"/>
+<xs:element minOccurs="0" name="AuthCode" nillable="true" type="xs:string"/>
+<xs:element minOccurs="0" name="BankMID" nillable="true" type="xs:string"/>
+<xs:element minOccurs="0" name="BindCardErrDescc" nillable="true" type="xs:string"/>
+<xs:element minOccurs="0" name="CCName" nillable="true" type="xs:string"/>
+<xs:element minOccurs="0" name="CCNo" nillable="true" type="xs:string"/>
+<xs:element minOccurs="0" name="CardType" nillable="true" type="xs:string"/>
+<xs:element minOccurs="0" name="Currency" nillable="true" type="xs:string"/>
+<xs:element minOccurs="0" name="DCCConversionRate" nillable="true" type="xs:string"/>
+<xs:element minOccurs="0" name="DCCStatus" type="xs:int"/>
+<xs:element minOccurs="0" name="Discount" nillable="true" type="xs:string"/>
+<xs:element minOccurs="0" name="ErrDesc" nillable="true" type="xs:string"/>
+<xs:element minOccurs="0" name="Lang" nillable="true" type="xs:string"/>
+<xs:element minOccurs="0" name="MerchantCode" nillable="true" type="xs:string"/>
+<xs:element minOccurs="0" name="OriginalAmount" nillable="true" type="xs:string"/>
+<xs:element minOccurs="0" name="OriginalCurrency" nillable="true" type="xs:string"/>
+<xs:element minOccurs="0" name="PaymentId" type="xs:int"/>
+<xs:element minOccurs="0" name="PaymentType" nillable="true" type="xs:string"/>
+<xs:element minOccurs="0" name="QRCode" nillable="true" type="xs:string"/>
+<xs:element minOccurs="0" name="QRValue" nillable="true" type="xs:string"/>
+<xs:element minOccurs="0" name="RefNo" nillable="true" type="xs:string"/>
+<xs:element minOccurs="0" name="Remark" nillable="true" type="xs:string"/>
+<xs:element minOccurs="0" name="Requery" nillable="true" type="xs:string"/>
+<xs:element minOccurs="0" name="S_bankname" nillable="true" type="xs:string"/>
+<xs:element minOccurs="0" name="S_country" nillable="true" type="xs:string"/>
+<xs:element minOccurs="0" name="SettlementAmount" nillable="true" type="xs:string"/>
+<xs:element minOccurs="0" name="SettlementCurrency" nillable="true" type="xs:string"/>
+<xs:element minOccurs="0" name="Signature" nillable="true" type="xs:string"/>
+<xs:element minOccurs="0" name="Status" type="xs:int"/>
+<xs:element minOccurs="0" name="TokenId" nillable="true" type="xs:string"/>
+<xs:element minOccurs="0" name="TransId" nillable="true" type="xs:string"/>
+<xs:element minOccurs="0" name="Xfield1" nillable="true" type="xs:string"/>
+<xs:element minOccurs="0" name="Xfield2" nillable="true" type="xs:string"/>
+</xs:sequence>
+</xs:complexType>
+<xs:element name="ClientResponseModel" nillable="true" type="tns:ClientResponseModel"/>
+</xs:schema>
+<xs:schema xmlns:xs="http://www.w3.org/2001/XMLSchema" xmlns:tns="http://schemas.datacontract.org/2004/07/System.ServiceModel" elementFormDefault="qualified" targetNamespace="http://schemas.datacontract.org/2004/07/System.ServiceModel">
+<xs:import namespace="http://schemas.datacontract.org/2004/07/System"/>
+<xs:complexType name="FaultException">
+<xs:complexContent mixed="false">
+<xs:extension base="tns:CommunicationException"/>
+</xs:complexContent>
+</xs:complexType>
+<xs:element name="FaultException" nillable="true" type="tns:FaultException"/>
+<xs:complexType name="CommunicationException">
+<xs:complexContent mixed="false">
+<xs:extension xmlns:q1="http://schemas.datacontract.org/2004/07/System" base="q1:SystemException"/>
+</xs:complexContent>
+</xs:complexType>
+<xs:element name="CommunicationException" nillable="true" type="tns:CommunicationException"/>
+<xs:complexType name="ArrayOfFaultException.FaultReasonData">
+<xs:sequence>
+<xs:element minOccurs="0" maxOccurs="unbounded" name="FaultException.FaultReasonData" nillable="true" type="tns:FaultException.FaultReasonData"/>
+</xs:sequence>
+</xs:complexType>
+<xs:element name="ArrayOfFaultException.FaultReasonData" nillable="true" type="tns:ArrayOfFaultException.FaultReasonData"/>
+<xs:complexType name="FaultException.FaultReasonData">
+<xs:sequence>
+<xs:element name="text" nillable="true" type="xs:string"/>
+<xs:element name="xmlLang" nillable="true" type="xs:string"/>
+</xs:sequence>
+</xs:complexType>
+<xs:element name="FaultException.FaultReasonData" nillable="true" type="tns:FaultException.FaultReasonData"/>
+<xs:complexType name="ArrayOfFaultException.FaultCodeData">
+<xs:sequence>
+<xs:element minOccurs="0" maxOccurs="unbounded" name="FaultException.FaultCodeData" nillable="true" type="tns:FaultException.FaultCodeData"/>
+</xs:sequence>
+</xs:complexType>
+<xs:element name="ArrayOfFaultException.FaultCodeData" nillable="true" type="tns:ArrayOfFaultException.FaultCodeData"/>
+<xs:complexType name="FaultException.FaultCodeData">
+<xs:sequence>
+<xs:element name="name" nillable="true" type="xs:string"/>
+<xs:element name="ns" nillable="true" type="xs:string"/>
+</xs:sequence>
+</xs:complexType>
+<xs:element name="FaultException.FaultCodeData" nillable="true" type="tns:FaultException.FaultCodeData"/>
+</xs:schema>
+<xs:schema xmlns:xs="http://www.w3.org/2001/XMLSchema" xmlns:ser="http://schemas.microsoft.com/2003/10/Serialization/" xmlns:tns="http://schemas.datacontract.org/2004/07/System" elementFormDefault="qualified" targetNamespace="http://schemas.datacontract.org/2004/07/System">
+<xs:import namespace="http://schemas.microsoft.com/2003/10/Serialization/"/>
+<xs:complexType name="SystemException">
+<xs:complexContent mixed="false">
+<xs:extension base="tns:Exception"/>
+</xs:complexContent>
+</xs:complexType>
+<xs:element name="SystemException" nillable="true" type="tns:SystemException"/>
+<xs:complexType name="Exception">
+<xs:sequence>
+<xs:any minOccurs="0" maxOccurs="unbounded" namespace="##local" processContents="skip"/>
+</xs:sequence>
+<xs:attribute ref="ser:FactoryType"/>
+</xs:complexType>
+<xs:element name="Exception" nillable="true" type="tns:Exception"/>
+</xs:schema>
+</wsdl:types>
+<wsdl:message name="IGatewayService_EntryPageFunctionality_InputMessage">
+<wsdl:part name="parameters" element="tns:EntryPageFunctionality"/>
+</wsdl:message>
+<wsdl:message name="IGatewayService_EntryPageFunctionality_OutputMessage">
+<wsdl:part name="parameters" element="tns:EntryPageFunctionalityResponse"/>
+</wsdl:message>
+<wsdl:message name="IGatewayService_EntryPageFunctionality_FaultExceptionFault_FaultMessage">
+<wsdl:part xmlns:q1="http://schemas.datacontract.org/2004/07/System.ServiceModel" name="detail" element="q1:FaultException"/>
+</wsdl:message>
+<wsdl:portType name="IGatewayService">
+<wsdl:operation name="EntryPageFunctionality">
+<wsdl:input wsaw:Action="https://www.mobile88.com/IGatewayService/EntryPageFunctionality" message="tns:IGatewayService_EntryPageFunctionality_InputMessage"/>
+<wsdl:output wsaw:Action="https://www.mobile88.com/IGatewayService/EntryPageFunctionalityResponse" message="tns:IGatewayService_EntryPageFunctionality_OutputMessage"/>
+<wsdl:fault wsaw:Action="https://www.mobile88.com/IGatewayService/EntryPageFunctionalityFaultExceptionFault" name="FaultExceptionFault" message="tns:IGatewayService_EntryPageFunctionality_FaultExceptionFault_FaultMessage"/>
+</wsdl:operation>
+</wsdl:portType>
+<wsdl:binding name="BasicHttpBinding_IGatewayService" type="tns:IGatewayService">
+<soap:binding transport="http://schemas.xmlsoap.org/soap/http"/>
+<wsdl:operation name="EntryPageFunctionality">
+<soap:operation soapAction="https://www.mobile88.com/IGatewayService/EntryPageFunctionality" style="document"/>
+<wsdl:input>
+<soap:body use="literal"/>
+</wsdl:input>
+<wsdl:output>
+<soap:body use="literal"/>
+</wsdl:output>
+<wsdl:fault name="FaultExceptionFault">
+<soap:fault use="literal" name="FaultExceptionFault" namespace=""/>
+</wsdl:fault>
+</wsdl:operation>
+</wsdl:binding>
+<wsdl:binding name="BasicHttpsBinding_IGatewayService" type="tns:IGatewayService">
+<wsp:PolicyReference URI="#BasicHttpsBinding_IGatewayService_policy"/>
+<soap:binding transport="http://schemas.xmlsoap.org/soap/http"/>
+<wsdl:operation name="EntryPageFunctionality">
+<soap:operation soapAction="https://www.mobile88.com/IGatewayService/EntryPageFunctionality" style="document"/>
+<wsdl:input>
+<soap:body use="literal"/>
+</wsdl:input>
+<wsdl:output>
+<soap:body use="literal"/>
+</wsdl:output>
+<wsdl:fault name="FaultExceptionFault">
+<soap:fault use="literal" name="FaultExceptionFault" namespace=""/>
+</wsdl:fault>
+</wsdl:operation>
+</wsdl:binding>
+<wsdl:service name="GatewayService">
+<wsdl:port name="BasicHttpBinding_IGatewayService" binding="tns:BasicHttpBinding_IGatewayService">
+<soap:address location="http://www.mobile88.com/ePayment/WebService/MHGatewayService/GatewayService.svc"/>
+</wsdl:port>
+<wsdl:port name="BasicHttpsBinding_IGatewayService" binding="tns:BasicHttpsBinding_IGatewayService">
+<soap:address location="https://payment.ipay88.com.my/ePayment/WebService/MHGatewayService/GatewayService.svc"/>
+</wsdl:port>
+</wsdl:service>
+</wsdl:definitions>

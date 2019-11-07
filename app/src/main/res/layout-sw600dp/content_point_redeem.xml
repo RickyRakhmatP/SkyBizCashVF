@@ -1,0 +1,364 @@
+<?xml version="1.0" encoding="utf-8"?>
+<android.support.constraint.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    app:layout_behavior="@string/appbar_scrolling_view_behavior"
+    tools:context=".ui_Member.m_PointRedemption.PointRedeem"
+    tools:showIn="@layout/activity_point_redeem">
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:layout_margin="10dp"
+        android:weightSum="3"
+        android:orientation="vertical">
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="0dp"
+            android:layout_weight="0.25"
+            android:layout_marginTop="2dp"
+            android:layout_marginBottom="2dp"
+            android:weightSum="1"
+            android:orientation="horizontal">
+
+            <TextView
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                android:text="Current Point Status"
+                android:textColor="@color/colorBlack"
+                android:textStyle="bold"
+                android:textSize="24sp"
+                android:gravity="left|center"/>
+
+        </LinearLayout>
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="0dp"
+            android:layout_weight="0.5"
+            android:layout_marginTop="2dp"
+            android:layout_marginBottom="2dp"
+            android:weightSum="3"
+            android:orientation="horizontal">
+
+            <LinearLayout
+                android:layout_width="0dp"
+                android:layout_height="match_parent"
+                android:layout_weight="1.0"
+                android:layout_marginLeft="0dp"
+                android:layout_marginRight="2dp">
+
+                <TextView
+                    android:layout_width="match_parent"
+                    android:layout_height="match_parent"
+                    android:layout_margin="2dp"
+                    android:background="@color/colorPurple"
+                    android:paddingTop="30dp"
+                    android:gravity="center"
+                    android:drawableTop="@drawable/ic_account_balance"
+                    android:text="POINT BALANCE B/F"
+                    android:textColor="@color/colorWhite"
+                    android:textSize="24sp" />
+
+            </LinearLayout>
+
+            <LinearLayout
+                android:layout_width="0dp"
+                android:layout_height="match_parent"
+                android:layout_weight="1.5"
+                android:layout_marginLeft="2dp"
+                android:layout_marginRight="2dp"
+                android:weightSum="2"
+                android:orientation="vertical">
+
+                <TextView
+                    android:layout_width="match_parent"
+                    android:layout_height="0dp"
+                    android:layout_weight="1.25"
+                    android:text="Total Point Available B/F:"
+                    android:id="@+id/txtRemarkBF"
+                    android:gravity="left|bottom"
+                    android:textColor="@color/colorBlack"
+                    android:textSize="21sp"/>
+
+                <TextView
+                    android:layout_width="match_parent"
+                    android:layout_height="0dp"
+                    android:layout_weight="0.75"
+                    android:text="D_ate"
+                    android:id="@+id/txtDateBF"
+                    android:gravity="left|top"
+                    android:textSize="21sp"/>
+
+            </LinearLayout>
+
+            <LinearLayout
+                android:layout_width="0dp"
+                android:layout_height="match_parent"
+                android:layout_weight="0.5"
+                android:layout_marginLeft="2dp"
+                android:layout_marginRight="2dp">
+
+                <TextView
+                    android:layout_width="match_parent"
+                    android:layout_height="match_parent"
+                    android:layout_weight="1"
+                    android:text="0P"
+                    android:id="@+id/txtPointBF"
+                    android:gravity="right|center"
+                    android:textColor="@color/colorPrimaryDark"
+                    android:textStyle="bold"
+                    android:textSize="24sp"
+                    android:paddingRight="4dp"
+                    android:paddingLeft="4dp"/>
+
+            </LinearLayout>
+
+        </LinearLayout>
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="0dp"
+            android:layout_weight="0.2"
+            android:layout_marginTop="2dp"
+            android:layout_marginBottom="2dp"
+            android:weightSum="1"
+            android:orientation="horizontal"
+            android:id="@+id/lnParticulars"
+            android:visibility="gone">
+
+            <TextView
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                android:text="Particulars"
+                android:textColor="@color/colorBlack"
+                android:textStyle="bold"
+                android:textSize="24sp"
+                android:gravity="left|center"/>
+
+        </LinearLayout>
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="0dp"
+            android:layout_weight="0.5"
+            android:layout_marginTop="2dp"
+            android:layout_marginBottom="2dp"
+            android:visibility="gone"
+            android:id="@+id/lnRedeem">
+
+            <LinearLayout
+                android:layout_width="0dp"
+                android:layout_height="match_parent"
+                android:layout_weight="1.0"
+                android:layout_marginLeft="0dp"
+                android:layout_marginRight="2dp">
+
+                <TextView
+                    android:layout_width="match_parent"
+                    android:layout_height="match_parent"
+                    android:layout_margin="2dp"
+                    android:background="@color/colorBrownLight"
+                    android:paddingTop="30dp"
+                    android:gravity="center"
+                    android:drawableTop="@drawable/ic_redeem"
+                    android:text="REDEMPTION"
+                    android:textColor="@color/colorWhite"
+                    android:textSize="24sp" />
+
+            </LinearLayout>
+
+            <LinearLayout
+                android:layout_width="0dp"
+                android:layout_height="match_parent"
+                android:layout_weight="1.5"
+                android:layout_marginLeft="2dp"
+                android:layout_marginRight="2dp"
+                android:weightSum="3"
+                android:orientation="vertical">
+
+                <TextView
+                    android:layout_width="match_parent"
+                    android:layout_height="0dp"
+                    android:layout_weight="0.9"
+                    android:text="Remark"
+                    android:id="@+id/txtRemark"
+                    android:gravity="left|center"
+                    android:textColor="@color/colorBlack"
+                    android:textSize="21sp"/>
+
+                <TextView
+                    android:layout_width="match_parent"
+                    android:layout_height="0dp"
+                    android:layout_weight="0.9"
+                    android:text="D_ate"
+                    android:id="@+id/txtD_ateTime"
+                    android:gravity="left|center"
+                    android:textSize="21sp"/>
+
+                <TextView
+                    android:layout_width="match_parent"
+                    android:layout_height="0dp"
+                    android:layout_weight="1.2"
+                    android:text="Description"
+                    android:id="@+id/txtDescription"
+                    android:gravity="left|top"
+                    android:textColor="@color/colorBlack"
+                    android:textSize="21sp"/>
+
+            </LinearLayout>
+
+            <LinearLayout
+                android:layout_width="0dp"
+                android:layout_height="match_parent"
+                android:layout_weight="0.5"
+                android:layout_marginLeft="2dp"
+                android:layout_marginRight="2dp">
+
+                <TextView
+                    android:layout_width="match_parent"
+                    android:layout_height="match_parent"
+                    android:layout_weight="1"
+                    android:text="0P"
+                    android:id="@+id/txtPoint"
+                    android:gravity="right|center"
+                    android:textColor="@color/colorBrownLight"
+                    android:textStyle="bold"
+                    android:textSize="24sp"
+                    android:paddingRight="4dp"
+                    android:paddingLeft="4dp"/>
+
+            </LinearLayout>
+
+        </LinearLayout>
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="0dp"
+            android:layout_weight="0.5"
+            android:layout_marginTop="2dp"
+            android:layout_marginBottom="2dp"
+            android:weightSum="3"
+            android:orientation="horizontal"
+            android:visibility="gone"
+            android:id="@+id/lnCF">
+
+            <LinearLayout
+                android:layout_width="0dp"
+                android:layout_height="match_parent"
+                android:layout_weight="1.0"
+                android:layout_marginLeft="0dp"
+                android:layout_marginRight="2dp">
+
+                <TextView
+                    android:layout_width="match_parent"
+                    android:layout_height="match_parent"
+                    android:layout_margin="2dp"
+                    android:background="@color/colorPurple"
+                    android:paddingTop="30dp"
+                    android:gravity="center"
+                    android:drawableTop="@drawable/ic_account_balance"
+                    android:text="POINT BALANCE C/F"
+                    android:textColor="@color/colorWhite"
+                    android:textSize="24sp" />
+
+            </LinearLayout>
+
+            <LinearLayout
+                android:layout_width="0dp"
+                android:layout_height="match_parent"
+                android:layout_weight="1.5"
+                android:layout_marginLeft="2dp"
+                android:layout_marginRight="2dp"
+                android:weightSum="2"
+                android:orientation="vertical">
+
+                <TextView
+                    android:layout_width="match_parent"
+                    android:layout_height="0dp"
+                    android:layout_weight="1.25"
+                    android:text="Total Point Available C/F:"
+                    android:id="@+id/txtRemarkCF"
+                    android:gravity="left|bottom"
+                    android:textColor="@color/colorBlack"
+                    android:textSize="21sp"/>
+
+                <TextView
+                    android:layout_width="match_parent"
+                    android:layout_height="0dp"
+                    android:layout_weight="0.75"
+                    android:text="D_ate"
+                    android:id="@+id/txtDateCF"
+                    android:gravity="left|top"
+                    android:textSize="21sp"/>
+
+
+            </LinearLayout>
+
+            <LinearLayout
+                android:layout_width="0dp"
+                android:layout_height="match_parent"
+                android:layout_weight="0.5"
+                android:layout_marginLeft="2dp"
+                android:layout_marginRight="2dp">
+
+                <TextView
+                    android:layout_width="match_parent"
+                    android:layout_height="match_parent"
+                    android:layout_weight="1"
+                    android:text="0P"
+                    android:id="@+id/txtPointCF"
+                    android:gravity="right|center"
+                    android:textColor="@color/colorPrimaryDark"
+                    android:textStyle="bold"
+                    android:textSize="24sp"
+                    android:paddingRight="4dp"
+                    android:paddingLeft="4dp"/>
+
+            </LinearLayout>
+
+        </LinearLayout>
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="0dp"
+            android:layout_weight="0.3"
+            android:layout_marginTop="2dp"
+            android:layout_marginBottom="2dp"
+            android:weightSum="2"
+            android:orientation="horizontal"
+            android:visibility="gone"
+            android:id="@+id/lnButton">
+
+            <Button
+                android:layout_width="0dp"
+                android:layout_height="match_parent"
+                android:layout_weight="1"
+                android:background="@color/colorWhite"
+                android:textColor="@color/colorBlack"
+                android:text="RESET"
+                android:layout_marginLeft="2dp"
+                android:layout_marginBottom="2dp"
+                android:id="@+id/btnReset"
+                android:textSize="24sp"/>
+
+
+            <Button
+                android:layout_width="0dp"
+                android:layout_height="match_parent"
+                android:layout_weight="1"
+                android:background="@color/colorOrange"
+                android:textColor="@color/colorWhite"
+                android:text="SAVE"
+                android:layout_marginLeft="2dp"
+                android:layout_marginBottom="2dp"
+                android:id="@+id/btnSave"
+                android:textSize="24sp"/>
+
+        </LinearLayout>
+
+    </LinearLayout>
+</android.support.constraint.ConstraintLayout>

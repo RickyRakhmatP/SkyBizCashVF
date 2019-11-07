@@ -1,0 +1,221 @@
+<?xml version="1.0" encoding="utf-8"?>
+<android.support.v4.widget.SwipeRefreshLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:id="@+id/simpleSwipeRefreshLayout"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent">
+
+      <LinearLayout
+          android:layout_width="match_parent"
+          android:layout_height="match_parent">
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                android:orientation="vertical"
+                android:layout_margin="5dp"
+                android:weightSum="3">
+
+                  <LinearLayout
+                      android:layout_width="match_parent"
+                      android:layout_height="0dp"
+                      android:layout_weight="0.25"
+                      android:weightSum="2"
+                      android:layout_marginTop="2dp"
+                      android:layout_marginBottom="2dp"
+                      android:orientation="horizontal"
+                      android:id="@+id/ln1">
+
+
+                        <Switch
+                            android:layout_width="0dp"
+                            android:layout_height="match_parent"
+                            android:layout_weight="0.65"
+                            android:id="@+id/swSearch"
+                            android:text="By Item Code"
+                            android:layoutDirection="rtl"
+                            android:layout_gravity="right|center"
+                            android:layout_marginLeft="2dp"
+                            android:layout_marginRight="2dp"
+                            android:checked="false"/>
+
+                        <LinearLayout
+                            android:layout_width="0dp"
+                            android:layout_height="match_parent"
+                            android:layout_weight="0.50"
+                            android:weightSum="2"
+                            android:orientation="horizontal"
+                            android:id="@+id/lnScan">
+
+                              <TextView
+                                  android:layout_width="0dp"
+                                  android:layout_height="match_parent"
+                                  android:layout_weight="1.2"
+                                  android:text="With Camera"
+                                  android:textSize="14sp"
+                                  android:textColor="@color/color_primary"
+                                  android:gravity="left|center" />
+
+                              <ImageView
+                                  android:layout_width="0dp"
+                                  android:layout_height="match_parent"
+                                  android:layout_weight="0.8"
+                                  android:background="@drawable/ic_camera"
+                                  android:padding="10dp"/>
+
+                        </LinearLayout>
+
+                        <Button
+                            android:layout_width="0dp"
+                            android:layout_height="match_parent"
+                            android:id="@+id/btnKeyboard"
+                            android:text="KB"
+                            android:textColor="@color/colorWhite"
+                            android:background="#bf360c"
+                            android:layout_marginLeft="2dp"
+                            android:layout_marginRight="2dp"
+                            android:layout_weight=".35" />
+
+                        <Button
+                            android:layout_width="0dp"
+                            android:layout_height="match_parent"
+                            android:id="@+id/btnHideKeyboard"
+                            android:text="KB"
+                            android:textColor="@color/colorBlack"
+                            android:background="@color/colorWhite"
+                            android:layout_marginLeft="2dp"
+                            android:layout_marginRight="2dp"
+                            android:layout_weight=".35"
+                            android:visibility="gone"/>
+
+                        <Button
+                            android:layout_width="0dp"
+                            android:layout_height="match_parent"
+                            android:id="@+id/btnListSO"
+                            android:text="HOLD LIST"
+                            android:textColor="@color/colorWhite"
+                            android:background="#bf360c"
+                            android:layout_marginLeft="2dp"
+                            android:layout_marginRight="2dp"
+                            android:layout_weight=".5" />
+
+                  </LinearLayout>
+
+                  <LinearLayout
+                      android:layout_width="match_parent"
+                      android:layout_height="0dp"
+                      android:layout_weight="0.25"
+                      android:weightSum="2"
+                      android:gravity="center_horizontal"
+                      android:layout_marginTop="2dp"
+                      android:layout_marginBottom="2dp"
+                      android:orientation="horizontal"
+                      android:id="@+id/ln2">
+
+                        <EditText
+                            android:layout_width="0dp"
+                            android:layout_height="match_parent"
+                            android:layout_weight="1.15"
+                            android:background="@drawable/border"
+                            android:hint="search"
+                            android:id="@+id/txtSearch"
+                            android:layout_gravity="left|center"
+                            android:layout_marginLeft="1dp"
+                            android:layout_marginRight="1dp"
+                            android:paddingLeft="4dp"
+                            android:paddingRight="4dp"/>
+
+                        <EditText
+                            android:layout_width="0dp"
+                            android:layout_height="match_parent"
+                            android:layout_weight="1.15"
+                            android:background="@drawable/border"
+                            android:hint="search Description"
+                            android:id="@+id/txtSearchDesc"
+                            android:layout_gravity="left|center"
+                            android:layout_marginLeft="1dp"
+                            android:layout_marginRight="1dp"
+                            android:paddingLeft="4dp"
+                            android:paddingRight="4dp"
+                            android:visibility="gone"/>
+
+                        <Button
+                            android:layout_width="0dp"
+                            android:layout_height="match_parent"
+                            android:layout_weight="0.35"
+                            android:id="@+id/btnSearch"
+                            android:textColor="#ffff"
+                            android:background="@color/colorPrimary"
+                            android:drawableTop="@drawable/ic_search2"
+                            android:layout_marginLeft="2dp"
+                            android:layout_marginRight="2dp"
+                            android:paddingTop="10dp"/>
+
+                        <android.support.v7.widget.SearchView
+                            android:layout_width="0dp"
+                            android:layout_height="match_parent"
+                            android:layout_weight="1.5"
+                            android:id="@+id/search"
+                            android:layout_marginLeft="2dp"
+                            android:layout_marginRight="2dp"
+                            android:visibility="gone"
+                            android:clickable="true" />
+
+                        <android.support.v7.widget.SearchView
+                            android:layout_width="0dp"
+                            android:layout_height="match_parent"
+                            android:layout_weight="1.5"
+                            android:id="@+id/searchDesc"
+                            android:layout_marginLeft="2dp"
+                            android:layout_marginRight="2dp"
+                            android:visibility="gone"
+                            android:clickable="true" />
+
+                        <Button
+                            android:layout_width="0dp"
+                            android:layout_height="match_parent"
+                            android:layout_weight="0.5"
+                            android:id="@+id/btnTakeOrder"
+                            android:text="Hold"
+                            android:textColor="#ffff"
+                            android:background="#bf360c"
+                            android:layout_marginLeft="2dp"
+                            android:layout_marginRight="2dp"/>
+
+                  </LinearLayout>
+
+                  <LinearLayout
+                      android:layout_width="match_parent"
+                      android:layout_height="0dp"
+                      android:layout_weight="1.0"
+                      android:layout_marginTop="2dp"
+                      android:layout_marginBottom="2dp"
+                      android:id="@+id/ln3">
+
+                        <include layout="@layout/order_recycleview" />
+
+                  </LinearLayout>
+
+                  <LinearLayout
+                      android:layout_width="match_parent"
+                      android:layout_height="0dp"
+                      android:layout_weight="1.5"
+                      android:layout_marginTop="2dp"
+                      android:layout_marginBottom="2dp"
+                      android:id="@+id/lnKeyboard">
+
+                        <skybiz.com.posoffline.KeyboardNew
+                            android:layout_width="match_parent"
+                            android:layout_height="match_parent"
+                            android:orientation="vertical"
+                            android:id="@+id/keyboardnew">
+
+                        </skybiz.com.posoffline.KeyboardNew>
+
+                  </LinearLayout>
+
+            </LinearLayout>
+
+      </LinearLayout>
+
+</android.support.v4.widget.SwipeRefreshLayout>

@@ -1,0 +1,109 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:orientation="vertical"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent">
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="300dp"
+        android:weightSum="1"
+        android:orientation="vertical"
+        android:gravity="center_vertical"
+        android:layout_margin="4dp">
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="0dp"
+            android:layout_weight="0.2"
+            android:layout_marginTop="2dp"
+            android:layout_marginBottom="2dp"
+            android:weightSum="1"
+            android:orientation="horizontal">
+
+
+            <EditText
+                android:layout_width="0dp"
+                android:layout_height="match_parent"
+                android:layout_weight="1"
+                android:layout_marginRight="2dp"
+                android:layout_marginLeft="2dp"
+                android:hint="Payment Note 1"
+                android:paddingLeft="4dp"
+                android:paddingRight="4dp"
+                android:background="@drawable/border"
+                android:textSize="15sp"
+                android:id="@+id/txtDoc2No"/>
+
+        </LinearLayout>
+
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="0dp"
+            android:layout_weight="0.2"
+            android:layout_marginTop="2dp"
+            android:layout_marginBottom="2dp"
+            android:weightSum="1"
+            android:orientation="horizontal">
+
+
+            <EditText
+                android:layout_width="0dp"
+                android:layout_height="match_parent"
+                android:layout_weight="1"
+                android:layout_marginRight="2dp"
+                android:layout_marginLeft="2dp"
+                android:hint="Payment Note 2"
+                android:paddingLeft="4dp"
+                android:paddingRight="4dp"
+                android:background="@drawable/border"
+                android:textSize="15sp"
+                android:id="@+id/txtDoc3No"/>
+
+        </LinearLayout>
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="0dp"
+            android:layout_weight="0.2"
+            android:layout_marginTop="2dp"
+            android:layout_marginBottom="2dp"
+            android:weightSum="2"
+            android:orientation="horizontal">
+
+            <Button
+                android:layout_width="0dp"
+                android:layout_height="match_parent"
+                android:layout_weight="1"
+                android:layout_marginRight="2dp"
+                android:layout_marginLeft="2dp"
+                android:text="BACK"
+                android:paddingLeft="4dp"
+                android:paddingRight="4dp"
+                android:background="@color/colorPrimaryDark"
+                android:textColor="@color/colorWhite"
+                android:textSize="15sp"
+                android:id="@+id/btnBack"/>
+
+            <Button
+                android:layout_width="0dp"
+                android:layout_height="match_parent"
+                android:layout_weight="1"
+                android:layout_marginRight="2dp"
+                android:layout_marginLeft="2dp"
+                android:text="APPLY CHANGES"
+                android:paddingLeft="4dp"
+                android:paddingRight="4dp"
+                android:background="@color/color_warning"
+                android:textColor="@color/colorWhite"
+                android:textSize="15sp"
+                android:id="@+id/btnApply"/>
+
+        </LinearLayout>
+
+
+
+    </LinearLayout>
+
+</LinearLayout>

@@ -1,0 +1,105 @@
+<?xml version="1.0" encoding="utf-8"?>
+<android.support.v7.widget.CardView
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:id="@+id/card_view"
+    android:layout_width="match_parent"
+    android:layout_height="65dp"
+    android:layout_margin="3dp">
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:orientation="horizontal"
+        android:weightSum="3">
+
+        <LinearLayout
+            android:layout_width="100dp"
+            android:layout_height="match_parent"
+            android:layout_weight="1">
+
+            <TextView
+                android:id="@+id/vCusCode"
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                android:gravity="left|center"
+                android:textColor="@color/cardview_dark_background"
+                android:textSize="13sp"
+                android:text="CusCode"
+                android:paddingLeft="3dp"
+                android:textStyle="normal" />
+
+        </LinearLayout>
+
+        <LinearLayout
+            android:layout_width="120dp"
+            android:layout_height="match_parent"
+            android:layout_weight="1">
+            <TextView
+                android:id="@+id/vCusName"
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                android:gravity="left|center"
+                android:textColor="@color/cardview_dark_background"
+                android:textSize="13sp"
+                android:text="CusName"
+                android:textStyle="normal" />
+        </LinearLayout>
+       <!-- <LinearLayout
+            android:layout_width="40dp"
+            android:layout_height="wrap_content"
+            android:layout_weight="1"
+            android:orientation="horizontal">
+            <TextView
+                android:id="@+id/vTermCode"
+                android:layout_width="wrap_content"
+                android:layout_height="60dp"
+                android:gravity="left|center"
+                android:textColor="@color/cardview_dark_background"
+                android:textSize="13sp"
+                android:text="Term Code"
+                android:paddingRight="3dp"
+                android:layout_weight="1"
+                android:textStyle="normal" />
+        </LinearLayout>
+
+        <LinearLayout
+            android:layout_width="50dp"
+            android:layout_height="wrap_content"
+            android:layout_weight="1"
+            android:orientation="horizontal">
+            <TextView
+                android:id="@+id/vD_ay"
+                android:layout_width="wrap_content"
+                android:layout_height="60dp"
+                android:gravity="left|center"
+                android:textColor="@color/cardview_dark_background"
+                android:textSize="13sp"
+                android:text="D_ay"
+                android:paddingRight="3dp"
+                android:layout_weight="1"
+                android:textStyle="normal" />
+        </LinearLayout>-->
+
+        <LinearLayout
+            android:layout_width="100dp"
+            android:layout_height="match_parent"
+            android:layout_weight="1">
+
+            <TextView
+                android:id="@+id/vSalesPersonCode"
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                android:gravity="center"
+                android:textColor="@color/cardview_dark_background"
+                android:textSize="13sp"
+                android:text=" "
+                android:paddingRight="3dp"
+                android:textStyle="normal" />
+
+        </LinearLayout>
+
+
+    </LinearLayout>
+
+</android.support.v7.widget.CardView>

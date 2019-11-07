@@ -1,0 +1,299 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:orientation="vertical"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent">
+
+   <LinearLayout
+       android:layout_width="300dp"
+       android:layout_height="wrap_content"
+       android:weightSum="6"
+       android:id="@+id/lnTable"
+       android:padding="8dp"
+       android:orientation="vertical">
+
+
+       <LinearLayout
+           android:layout_width="match_parent"
+           android:layout_height="40dp"
+           android:layout_weight="1"
+           android:weightSum="2"
+           android:orientation="horizontal"
+           android:id="@+id/lnScan">
+
+           <TextView
+               android:layout_width="0dp"
+               android:layout_height="match_parent"
+               android:layout_weight="1.75"
+               android:text="Scan With Camera"
+               android:textSize="14sp"
+               android:textColor="@color/color_primary"
+               android:gravity="left|center" />
+
+           <ImageView
+               android:layout_width="0dp"
+               android:layout_height="match_parent"
+               android:layout_weight="0.25"
+               android:background="@drawable/ic_camera"
+               android:padding="10dp"/>
+
+       </LinearLayout>
+
+       <LinearLayout
+           android:layout_width="match_parent"
+           android:layout_height="50dp"
+           android:layout_weight="1"
+           android:weightSum="2"
+           android:orientation="horizontal"
+           android:layout_marginTop="2dp"
+           android:layout_marginBottom="2dp">
+
+           <EditText
+               android:layout_width="match_parent"
+               android:layout_height="45dp"
+               android:layout_weight="1"
+               android:hint="Table No"
+               android:background="@drawable/edborder"
+               android:layout_marginLeft="2dp"
+               android:layout_marginRight="2dp"
+               android:paddingLeft="6dp"
+               android:paddingRight="6dp"
+               android:gravity="left|center"
+               android:inputType="text"
+               android:textSize="17sp"
+               android:id="@+id/edTableNo"/>
+
+           <EditText
+               android:layout_width="match_parent"
+               android:layout_height="45dp"
+               android:layout_weight="1"
+               android:hint="Card No"
+               android:background="@drawable/edborder"
+               android:layout_marginLeft="2dp"
+               android:layout_marginRight="2dp"
+               android:paddingLeft="6dp"
+               android:paddingRight="6dp"
+               android:gravity="left|center"
+               android:inputType="text"
+               android:textSize="17sp"
+               android:id="@+id/txtCardNo"/>
+
+       </LinearLayout>
+
+       <LinearLayout
+           android:layout_width="match_parent"
+           android:layout_height="50dp"
+           android:layout_weight="1"
+           android:weightSum="2"
+           android:orientation="horizontal"
+           android:layout_marginTop="2dp"
+           android:layout_marginBottom="2dp">
+
+           <EditText
+               android:layout_width="match_parent"
+               android:layout_height="45dp"
+               android:layout_weight="1"
+               android:hint="Payment Note 1"
+               android:background="@drawable/edborder"
+               android:paddingLeft="6dp"
+               android:paddingRight="6dp"
+               android:gravity="left|center"
+               android:inputType="text"
+               android:textSize="17sp"
+               android:id="@+id/txtNote1"/>
+
+       </LinearLayout>
+
+       <LinearLayout
+           android:layout_width="match_parent"
+           android:layout_height="wrap_content"
+           android:layout_weight="1">
+
+           <CheckBox
+               android:layout_width="match_parent"
+               android:layout_height="match_parent"
+               android:text="Appointment"
+               android:id="@+id/chkApp"/>
+       </LinearLayout>
+
+       <LinearLayout
+           android:layout_width="match_parent"
+           android:layout_height="250dp"
+           android:id="@+id/lnAppointment"
+           android:visibility="gone"
+           android:layout_weight="1"
+           android:weightSum="2"
+           android:orientation="vertical">
+
+           <LinearLayout
+               android:layout_width="match_parent"
+               android:layout_height="0dp"
+               android:layout_weight="0.3"
+               android:weightSum="2"
+               android:orientation="horizontal">
+
+               <TextView
+                   android:layout_width="0dp"
+                   android:layout_height="match_parent"
+                   android:gravity="center"
+                   android:paddingLeft="4dp"
+                   android:paddingRight="4dp"
+                   android:layout_weight="1"
+                   android:text="H:i:s"
+                   android:id="@+id/txtTimeApp"/>
+
+               <TextView
+                   android:layout_width="0dp"
+                   android:layout_height="match_parent"
+                   android:gravity="left|center"
+                   android:paddingLeft="4dp"
+                   android:paddingRight="4dp"
+                   android:layout_weight="1"
+                   android:text="yyyy:mm:dd"
+                   android:id="@+id/txtDateApp"/>
+
+           </LinearLayout>
+
+           <LinearLayout
+               android:layout_width="match_parent"
+               android:layout_height="0dp"
+               android:layout_weight="1.7"
+               android:orientation="vertical">
+
+               <TimePicker
+                   android:layout_width="match_parent"
+                   android:layout_height="match_parent"
+                   android:timePickerMode="spinner"
+                   android:id="@+id/tpTimeApp">
+
+               </TimePicker>
+
+               <DatePicker
+                   android:layout_width="match_parent"
+                   android:layout_height="match_parent"
+                   android:datePickerMode="spinner"
+                   android:calendarViewShown="false"
+                   android:visibility="gone"
+                   android:id="@+id/dpDateApp">
+
+               </DatePicker>
+
+           </LinearLayout>
+
+       </LinearLayout>
+
+       <LinearLayout
+           android:layout_width="match_parent"
+           android:layout_height="55dp"
+           android:layout_weight="1"
+           android:weightSum="2"
+           android:layout_marginTop="10dp"
+           android:orientation="horizontal">
+
+           <Button
+               android:layout_width="match_parent"
+               android:layout_height="50dp"
+               android:layout_weight="1"
+               android:text="Cancel"
+               android:gravity="center"
+               android:id="@+id/btnCancel"
+               android:layout_marginRight="2dp"
+               android:background="@drawable/edborder"
+               android:textSize="16sp"/>
+
+           <Button
+               android:layout_width="match_parent"
+               android:layout_height="50dp"
+               android:layout_weight="1"
+               android:text="OK"
+               android:gravity="center"
+               android:id="@+id/btnOK"
+               android:layout_marginLeft="2dp"
+               android:background="@color/colorPrimaryDark"
+               android:textColor="#ffff"
+               android:textSize="16sp"/>
+
+       </LinearLayout>
+
+       <LinearLayout
+           android:layout_width="match_parent"
+           android:layout_height="250dp"
+           android:id="@+id/lnKeyboard"
+           android:visibility="visible"
+           android:layout_weight="1">
+
+           <skybiz.com.posoffline.MyKeyboard_Order
+               android:layout_width="match_parent"
+               android:layout_height="match_parent"
+               android:orientation="vertical"
+               android:id="@+id/keyboard">
+
+           </skybiz.com.posoffline.MyKeyboard_Order>
+
+       </LinearLayout>
+
+   </LinearLayout>
+
+    <LinearLayout
+        android:layout_width="300dp"
+        android:layout_height="170dp"
+        android:weightSum="2"
+        android:id="@+id/lnAddOn"
+        android:visibility="gone"
+        android:padding="8dp"
+        android:orientation="vertical">
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="60dp"
+            android:layout_weight="1"
+            android:weightSum="1"
+            android:orientation="horizontal">
+
+            <TextView
+                android:layout_width="match_parent"
+                android:layout_height="55dp"
+                android:layout_weight="1"
+                android:gravity="center"
+                android:text="@string/addOn"
+                android:id="@+id/txtConfirm"
+                android:textSize="14sp"/>
+
+        </LinearLayout>
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="60dp"
+            android:layout_weight="1"
+            android:weightSum="2"
+            android:layout_marginTop="10dp"
+            android:orientation="horizontal">
+
+            <Button
+                android:layout_width="match_parent"
+                android:layout_height="55dp"
+                android:layout_weight="1"
+                android:text="Cancel"
+                android:gravity="center"
+                android:id="@+id/btnCancel2"
+                android:layout_marginRight="2dp"
+                android:background="@drawable/edborder"
+                android:textSize="14sp"/>
+
+            <Button
+                android:layout_width="match_parent"
+                android:layout_height="55dp"
+                android:layout_weight="1"
+                android:text="OK"
+                android:gravity="center"
+                android:id="@+id/btnOK2"
+                android:layout_marginLeft="2dp"
+                android:background="@color/colorPrimaryDark"
+                android:textColor="#ffff"
+                android:textSize="14sp"/>
+
+        </LinearLayout>
+
+    </LinearLayout>
+
+</LinearLayout>

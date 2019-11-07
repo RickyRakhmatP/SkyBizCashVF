@@ -1,0 +1,547 @@
+<?xml version="1.0" encoding="utf-8"?>
+<ScrollView xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent" >
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="vertical" >
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="670dp"
+            android:layout_margin="10dp"
+            android:orientation="vertical">
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="0dp"
+                android:layout_weight="0.1"
+                android:layout_marginBottom="4dp"
+                android:weightSum="1"
+                android:orientation="horizontal">
+
+                <TextView
+                    android:id="@+id/txtMAC"
+                    android:layout_width="match_parent"
+                    android:layout_height="match_parent"
+                    android:paddingLeft="4dp"
+                    android:layout_marginBottom="2dp"
+                    android:textSize="18sp"
+                    android:textColor="#000000"
+                    android:text="MAC : " />
+
+                <TextView
+                    android:id="@+id/txtModules"
+                    android:layout_width="match_parent"
+                    android:layout_height="match_parent"
+                    android:visibility="gone"
+                    android:paddingLeft="4dp"
+                    android:layout_marginBottom="2dp"
+                    android:textSize="16sp"
+                    android:textColor="#000000" />
+
+            </LinearLayout>
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="0dp"
+                android:layout_weight="0.1"
+                android:layout_marginBottom="4dp"
+                android:weightSum="1"
+                android:orientation="horizontal">
+
+
+                <TextView
+                    android:id="@+id/txtCompanyName"
+                    android:layout_width="match_parent"
+                    android:gravity="left|center"
+                    android:layout_height="match_parent"
+                    android:paddingLeft="4dp"
+                    android:layout_marginBottom="2dp"
+                    android:textSize="18sp"
+                    android:textColor="#000000"
+                    android:text="Registered Name : " />
+
+                <TextView
+                    android:id="@+id/txtMgt01YN"
+                    android:layout_width="match_parent"
+                    android:visibility="gone"
+                    android:layout_height="match_parent"
+                    android:paddingLeft="4dp"
+                    android:layout_marginBottom="2dp"
+                    android:textSize="18sp"
+                    android:textColor="#000000"
+                    android:text="0" />
+
+            </LinearLayout>
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="0dp"
+                android:layout_weight="0.1"
+                android:layout_marginBottom="4dp"
+                android:weightSum="1"
+                android:orientation="horizontal">
+
+                <EditText
+                    android:id="@+id/ServerName_txt"
+                    android:layout_width="match_parent"
+                    android:layout_height="match_parent"
+                    android:layout_weight="1"
+                    android:enabled="false"
+                    android:layout_marginBottom="2dp"
+                    android:hint="Server Name" />
+
+            </LinearLayout>
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="0dp"
+                android:layout_weight="0.1"
+                android:layout_marginBottom="4dp"
+                android:weightSum="1"
+                android:orientation="horizontal">
+
+                <EditText
+                    android:id="@+id/UserName_txt"
+                    android:layout_width="match_parent"
+                    android:layout_height="match_parent"
+                    android:enabled="false"
+                    android:hint="User Name"/>
+
+            </LinearLayout>
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="0dp"
+                android:layout_weight="0.1"
+                android:layout_marginBottom="4dp"
+                android:weightSum="1"
+                android:orientation="horizontal">
+
+                <EditText
+                    android:id="@+id/Password_txt"
+                    android:layout_width="match_parent"
+                    android:layout_height="match_parent"
+                    android:enabled="false"
+                    android:hint="Password"
+                    android:inputType="textPassword"/>
+
+            </LinearLayout>
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="0dp"
+                android:layout_weight="0.1"
+                android:layout_marginBottom="4dp"
+                android:weightSum="1"
+                android:orientation="horizontal">
+
+                <EditText
+                    android:id="@+id/DBName_txt"
+                    android:layout_width="match_parent"
+                    android:layout_height="match_parent"
+                    android:enabled="false"
+                    android:hint="Database Name" />
+
+            </LinearLayout>
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="0dp"
+                android:layout_weight="0.1"
+                android:layout_marginBottom="4dp"
+                android:weightSum="1"
+                android:orientation="horizontal">
+
+                <EditText
+                    android:id="@+id/Port_txt"
+                    android:layout_width="match_parent"
+                    android:layout_height="match_parent"
+                    android:enabled="false"
+                    android:hint="Port"/>
+
+            </LinearLayout>
+
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="0dp"
+                android:layout_weight="0.1"
+                android:layout_marginBottom="4dp"
+                android:weightSum="1"
+                android:orientation="horizontal">
+
+                <EditText
+                    android:id="@+id/txtBranchCode"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:enabled="false"
+                    android:ems="10"
+                    android:hint="Branch Code"/>
+
+            </LinearLayout>
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="0dp"
+                android:layout_weight="0.1"
+                android:layout_marginBottom="4dp"
+                android:weightSum="1"
+                android:orientation="horizontal">
+
+                <EditText
+                    android:id="@+id/txtLocationCode"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:enabled="false"
+                    android:ems="10"
+                    android:hint="Location Code"/>
+
+            </LinearLayout>
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="0dp"
+                android:layout_weight="0.1"
+                android:layout_marginBottom="4dp"
+                android:weightSum="1"
+                android:orientation="horizontal">
+
+                <EditText
+                    android:id="@+id/txtUserCode"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:enabled="false"
+                    android:ems="10"
+                    android:hint="User Code"/>
+
+            </LinearLayout>
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="0dp"
+                android:layout_weight="0.1"
+                android:layout_marginBottom="4dp"
+                android:weightSum="1"
+                android:orientation="horizontal">
+
+                <EditText
+                    android:id="@+id/txtCounterCode"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:enabled="false"
+                    android:ems="10"
+                    android:hint="Counter Code"/>
+
+            </LinearLayout>
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="0dp"
+                android:layout_weight="0.1"
+                android:layout_marginBottom="4dp"
+                android:weightSum="2"
+                android:orientation="horizontal">
+
+                <TextView
+                    android:layout_width="0dp"
+                    android:layout_height="match_parent"
+                    android:layout_weight="1"
+                    android:layout_marginBottom="2dp"
+                    android:textSize="17sp"
+                    android:gravity="left|center"
+                    android:text="Choose DB Status" />
+
+                <Spinner
+                    android:id="@+id/spDBStatus"
+                    android:layout_width="0dp"
+                    android:layout_height="match_parent"
+                    android:layout_weight="1"
+                    android:gravity="left|center"/>
+
+            </LinearLayout>
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="0dp"
+                android:layout_weight="0.1"
+                android:layout_marginBottom="4dp"
+                android:weightSum="1"
+                android:orientation="horizontal">
+
+                <Switch
+                    android:layout_width="match_parent"
+                    android:layout_height="match_parent"
+                    android:id="@+id/swItemConn"
+                    android:textSize="16sp"
+                    android:text="Item Conn"
+                    android:checked="false" />
+
+            </LinearLayout>
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="0dp"
+                android:layout_weight="0.1"
+                android:layout_marginBottom="4dp"
+                android:weightSum="2"
+                android:orientation="horizontal">
+
+                <Button
+                    android:id="@+id/btn_checkconnect"
+                    android:layout_width="0dp"
+                    android:layout_height="match_parent"
+                    android:layout_weight="1"
+                    android:text="1. Check Connection"
+                    android:background="@android:color/holo_green_dark"
+                    android:textColor="@android:color/background_light" />
+                <Button
+                    android:id="@+id/btn_save"
+                    android:layout_width="0dp"
+                    android:layout_height="match_parent"
+                    android:layout_weight="1"
+                    android:enabled="false"
+                    android:text="2. Register Device"
+                    android:layout_marginLeft="4dp"
+                    android:background="@color/colorOrange"
+                    android:textColor="@android:color/background_light" />
+
+            </LinearLayout>
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="0dp"
+                android:layout_weight="0.1"
+                android:layout_marginBottom="4dp"
+                android:weightSum="2"
+                android:orientation="horizontal">
+
+                <Button
+                    android:id="@+id/btn_cancel"
+                    android:layout_width="0dp"
+                    android:layout_height="match_parent"
+                    android:layout_weight="1"
+                    android:text="4. Back"
+                    android:textColor="@android:color/background_light"
+                    android:background="#01579b" />
+
+                <Button
+                    android:id="@+id/btnBackup"
+                    android:layout_width="0dp"
+                    android:layout_height="match_parent"
+                    android:layout_marginLeft="4dp"
+                    android:layout_weight="1"
+                    android:text="3. Backup Setting"
+                    android:textColor="@android:color/background_light"
+                    android:background="@color/colorOrange" />
+
+            </LinearLayout>
+
+        </LinearLayout>
+
+    </LinearLayout>
+
+</ScrollView>
+<!--<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical"
+    android:padding="10dp" >
+
+    <TextView
+        android:id="@+id/txtMAC"
+        android:layout_width="match_parent"
+        android:layout_height="32dp"
+        android:paddingLeft="4dp"
+        android:layout_marginBottom="2dp"
+        android:textSize="18sp"
+        android:textColor="#000000"
+        android:text="MAC : " />
+
+    <TextView
+        android:id="@+id/txtMgt01YN"
+        android:layout_width="match_parent"
+        android:visibility="gone"
+        android:layout_height="32dp"
+        android:paddingLeft="4dp"
+        android:layout_marginBottom="2dp"
+        android:textSize="18sp"
+        android:textColor="#000000"
+        android:text="0" />
+
+    <TextView
+        android:id="@+id/txtCompanyName"
+        android:layout_width="match_parent"
+        android:gravity="left|center"
+        android:layout_height="32dp"
+        android:paddingLeft="4dp"
+        android:layout_marginBottom="2dp"
+        android:textSize="18sp"
+        android:textColor="#000000"
+        android:text="Registered Name : " />
+
+    <EditText
+        android:id="@+id/ServerName_txt"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:enabled="false"
+        android:layout_marginBottom="2dp"
+        android:ems="10"
+        android:hint="Server Name" />
+
+    <EditText
+        android:id="@+id/UserName_txt"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:enabled="false"
+        android:ems="10"
+        android:hint="User Name">
+    </EditText>
+
+    <EditText
+        android:id="@+id/Password_txt"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:enabled="false"
+        android:ems="10"
+        android:hint="Password"
+        android:inputType="textPassword">
+    </EditText>
+
+    <EditText
+        android:id="@+id/DBName_txt"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:enabled="false"
+        android:ems="10"
+        android:hint="Database Name" >
+    </EditText>
+    <EditText
+        android:id="@+id/Port_txt"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:enabled="false"
+        android:ems="10"
+        android:hint="Port">
+    </EditText>
+
+    <EditText
+        android:id="@+id/txtBranchCode"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:enabled="false"
+        android:ems="10"
+        android:hint="BranchCode">
+    </EditText>
+
+    <EditText
+        android:id="@+id/txtLocationCode"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:enabled="false"
+        android:ems="10"
+        android:hint="LocationCode">
+    </EditText>
+    <LinearLayout
+        android:layout_width="fill_parent"
+        android:layout_height="45dp"
+        android:weightSum="2"
+        android:layout_marginTop="5dp"
+        android:layout_marginBottom="5dp"
+        android:gravity="center_horizontal"
+        android:orientation="horizontal" >
+
+        <TextView
+            android:layout_width="170dp"
+            android:layout_height="match_parent"
+            android:layout_marginBottom="2dp"
+            android:textSize="17sp"
+            android:gravity="left|center"
+            android:layout_weight="1"
+            android:ems="10"
+            android:text="Choose DB Status" />
+
+        <Spinner
+            android:id="@+id/spDBStatus"
+            android:layout_width="180dp"
+            android:layout_height="match_parent"
+            android:gravity="left|center"
+            android:ems="10"
+            android:layout_weight="1">
+
+        </Spinner>
+
+    </LinearLayout>
+
+
+    <Switch
+        android:layout_width="match_parent"
+        android:layout_height="45dp"
+        android:id="@+id/swItemConn"
+        android:textSize="16sp"
+        android:text="Item Conn"
+        android:checked="false"
+        />
+    <LinearLayout
+        android:layout_width="fill_parent"
+        android:layout_height="45dp"
+        android:weightSum="2"
+        android:layout_marginTop="5dp"
+        android:layout_marginBottom="5dp"
+        android:gravity="center_horizontal"
+        android:orientation="horizontal" >
+
+        <Button
+            android:id="@+id/btn_checkconnect"
+            android:layout_width="0dp"
+            android:layout_height="match_parent"
+            android:layout_weight="1"
+            android:text="Check Connection"
+            android:background="@android:color/holo_green_dark"
+            android:textColor="@android:color/background_light" />
+        <Button
+            android:id="@+id/btn_save"
+            android:layout_width="0dp"
+            android:layout_height="match_parent"
+            android:layout_weight="1"
+            android:enabled="false"
+            android:text="Register Device"
+            android:layout_marginLeft="4dp"
+            android:background="@color/colorOrange"
+            android:textColor="@android:color/background_light" />
+    </LinearLayout>
+
+    <LinearLayout
+        android:layout_width="fill_parent"
+        android:layout_height="45dp"
+        android:weightSum="2"
+        android:gravity="center_horizontal"
+        android:orientation="horizontal" >
+
+        <Button
+            android:id="@+id/btn_cancel"
+            android:layout_width="0dp"
+            android:layout_height="match_parent"
+            android:layout_weight="1"
+            android:text="Back"
+            android:textColor="@android:color/background_light"
+            android:background="#01579b" />
+
+        <Button
+            android:id="@+id/btnBackup"
+            android:layout_width="0dp"
+            android:layout_height="match_parent"
+            android:layout_marginLeft="4dp"
+            android:layout_weight="1"
+            android:text="Backup Setting"
+            android:textColor="@android:color/background_light"
+            android:background="@color/colorOrange" />
+
+
+    </LinearLayout>
+
+</LinearLayout>-->

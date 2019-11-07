@@ -1,0 +1,659 @@
+<?xml version="1.0" encoding="utf-8"?>
+<ScrollView xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent" >
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="vertical" >
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="720dp"
+            android:layout_margin="10dp"
+            android:orientation="vertical">
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="0dp"
+                android:layout_weight=".1"
+                android:weightSum="1"
+                android:gravity="center_horizontal"
+                android:orientation="horizontal" >
+
+                <TextView
+                    android:layout_width="0dp"
+                    android:layout_height="match_parent"
+                    android:layout_weight=".4"
+                    android:text="Date"
+                    android:id="@+id/txtDate"
+                    android:gravity="center"
+                    android:textSize="16sp"
+                    android:textStyle="bold" />
+
+            </LinearLayout>
+
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="0dp"
+                android:layout_weight=".1"
+                android:weightSum="1"
+                android:gravity="center_horizontal"
+                android:orientation="horizontal" >
+
+                <TextView
+                    android:layout_width="match_parent"
+                    android:layout_height="match_parent"
+                    android:text="Company Name"
+                    android:id="@+id/txtCompanyName"
+                    android:gravity="center"
+                    android:textSize="16sp"
+                    android:textStyle="bold" />
+
+            </LinearLayout>
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="0dp"
+                android:layout_weight=".1"
+                android:weightSum="3"
+                android:gravity="center_horizontal"
+                android:orientation="horizontal" >
+
+                <TextView
+                    android:layout_width="180dp"
+                    android:layout_height="match_parent"
+                    android:text="DAILY CHECKOUT AS AT"
+                    android:id="@+id/tDateTimePrint"
+                    android:gravity="left|center"
+                    android:textSize="14sp"
+                    android:layout_weight="1"
+                    android:textStyle="bold" />
+
+                <TextView
+                    android:layout_width="4dp"
+                    android:layout_height="match_parent"
+                    android:text=":"
+                    android:gravity="left|center"
+                    android:textSize="14sp"
+                    android:layout_weight="1"
+                    android:textStyle="bold" />
+                <TextView
+                    android:layout_width="128dp"
+                    android:layout_height="match_parent"
+                    android:text="2017-12-08"
+                    android:id="@+id/vDateTimePrint"
+                    android:gravity="left|center"
+                    android:textSize="14sp"
+                    android:layout_weight="1"
+                    android:textStyle="normal" />
+            </LinearLayout>
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="0dp"
+                android:layout_weight=".1"
+                android:weightSum="1"
+                android:gravity="center_horizontal"
+                android:orientation="vertical" >
+
+                <TextView
+                    android:layout_width="match_parent"
+                    android:layout_height="match_parent"
+                    android:text="@string/sales_detail"
+                    android:id="@+id/tSalesDetail"
+                    android:gravity="left|center"
+                    android:textSize="14sp"
+                    android:layout_weight="1"
+                    android:textStyle="bold" />
+
+            </LinearLayout>
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="0dp"
+                android:layout_weight=".1"
+                android:weightSum="3"
+                android:gravity="center_horizontal"
+                android:orientation="horizontal" >
+
+                <TextView
+                    android:layout_width="180dp"
+                    android:layout_height="match_parent"
+                    android:text="CASH SALES"
+                    android:id="@+id/tCashSales"
+                    android:gravity="left|center"
+                    android:textSize="14sp"
+                    android:layout_weight="1"
+                    android:textStyle="normal" />
+                <TextView
+                    android:layout_width="4dp"
+                    android:layout_height="match_parent"
+                    android:text=":"
+                    android:gravity="left|center"
+                    android:textSize="14sp"
+                    android:layout_weight="1"
+                    android:textStyle="bold" />
+                <TextView
+                    android:layout_width="128dp"
+                    android:layout_height="match_parent"
+                    android:text="0.00"
+                    android:id="@+id/vCashSalesAmt"
+                    android:gravity="right|center"
+                    android:textSize="14sp"
+                    android:layout_weight="1"
+                    android:textStyle="normal" />
+
+            </LinearLayout>
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="0dp"
+                android:layout_weight=".1"
+                android:weightSum="3"
+                android:gravity="center_horizontal"
+                android:orientation="horizontal" >
+
+                <TextView
+                    android:layout_width="180dp"
+                    android:layout_height="match_parent"
+                    android:text="-CREDIT NOTE"
+                    android:gravity="left|center"
+                    android:textSize="14sp"
+                    android:layout_weight="1"
+                    android:textStyle="normal" />
+                <TextView
+                    android:layout_width="4dp"
+                    android:layout_height="match_parent"
+                    android:text=":"
+                    android:gravity="left|center"
+                    android:textSize="14sp"
+                    android:layout_weight="1"
+                    android:textStyle="bold" />
+                <TextView
+                    android:layout_width="128dp"
+                    android:layout_height="match_parent"
+                    android:text="0.00"
+                    android:id="@+id/vCreditNote"
+                    android:gravity="right|center"
+                    android:textSize="14sp"
+                    android:layout_weight="1"
+                    android:textStyle="normal" />
+
+            </LinearLayout>
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="0dp"
+                android:layout_weight=".1"
+                android:weightSum="3"
+                android:gravity="center_horizontal"
+                android:orientation="horizontal" >
+
+                <TextView
+                    android:layout_width="180dp"
+                    android:layout_height="match_parent"
+                    android:text="TOTAL SALES"
+                    android:id="@+id/tTotalSales"
+                    android:gravity="left|center"
+                    android:textSize="14sp"
+                    android:layout_weight="1"
+                    android:textStyle="bold" />
+                <TextView
+                    android:layout_width="4dp"
+                    android:layout_height="match_parent"
+                    android:text=":"
+                    android:gravity="left|center"
+                    android:textSize="14sp"
+                    android:layout_weight="1"
+                    android:textStyle="bold" />
+                <TextView
+                    android:layout_width="128dp"
+                    android:layout_height="match_parent"
+                    android:text="0.00"
+                    android:id="@+id/vTotalCashSalesAmt"
+                    android:gravity="right|center"
+                    android:textSize="14sp"
+                    android:layout_weight="1"
+                    android:textStyle="normal" />
+
+            </LinearLayout>
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="0dp"
+                android:layout_weight=".1"
+                android:weightSum="1"
+                android:gravity="center_horizontal"
+                android:orientation="vertical" >
+
+                <TextView
+                    android:layout_width="match_parent"
+                    android:layout_height="match_parent"
+                    android:text="@string/cash_detail"
+                    android:id="@+id/tCASHDETAILS"
+                    android:gravity="left|center"
+                    android:textSize="14sp"
+                    android:layout_weight="1"
+                    android:textStyle="bold" />
+
+            </LinearLayout>
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="0dp"
+                android:layout_weight=".1"
+                android:weightSum="3"
+                android:gravity="center_horizontal"
+                android:orientation="horizontal" >
+
+                <TextView
+                    android:layout_width="180dp"
+                    android:layout_height="match_parent"
+                    android:text="CASH RECEIPT"
+                    android:id="@+id/tCashReceipt"
+                    android:gravity="left|center"
+                    android:textSize="14sp"
+                    android:layout_weight="1"
+                    android:textStyle="normal" />
+                <TextView
+                    android:layout_width="4dp"
+                    android:layout_height="match_parent"
+                    android:text=":"
+                    android:gravity="left|center"
+                    android:textSize="14sp"
+                    android:layout_weight="1"
+                    android:textStyle="bold" />
+
+                <TextView
+                    android:layout_width="128dp"
+                    android:layout_height="match_parent"
+                    android:text="0.00"
+                    android:id="@+id/vCashReceipt"
+                    android:gravity="right|center"
+                    android:textSize="14sp"
+                    android:layout_weight="1"
+                    android:textStyle="normal" />
+
+            </LinearLayout>
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="0dp"
+                android:layout_weight=".2"
+                android:weightSum="1"
+                android:gravity="center_horizontal"
+                android:orientation="horizontal"
+                android:id="@+id/lnCC">
+
+                <LinearLayout
+                    android:layout_width="0dp"
+                    android:layout_height="wrap_content"
+                    android:layout_weight="1">
+
+                    <android.support.v7.widget.RecyclerView
+                        android:id="@+id/rvPayType"
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content" />
+
+                 </LinearLayout>
+
+                <!--<TextView
+                    android:layout_width="180dp"
+                    android:layout_height="match_parent"
+                    android:text="CREDIT CARD"
+                    android:id="@+id/tCC1"
+                    android:gravity="left|center"
+                    android:textSize="14sp"
+                    android:layout_weight="1"
+                    android:textStyle="normal" />
+                <TextView
+                    android:layout_width="4dp"
+                    android:layout_height="match_parent"
+                    android:text=":"
+                    android:gravity="left|center"
+                    android:textSize="14sp"
+                    android:layout_weight="1"
+                    android:textStyle="bold"
+                    android:id="@+id/vSplit"/>
+
+                <TextView
+                    android:layout_width="128dp"
+                    android:layout_height="match_parent"
+                    android:text="0.00"
+                    android:id="@+id/vCC1"
+                    android:gravity="right|center"
+                    android:textSize="14sp"
+                    android:layout_weight="1"
+                    android:textStyle="normal" />-->
+
+            </LinearLayout>
+
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="0dp"
+                android:layout_weight=".1"
+                android:weightSum="3"
+                android:gravity="center_horizontal"
+                android:orientation="horizontal" >
+
+                <TextView
+                    android:layout_width="180dp"
+                    android:layout_height="match_parent"
+                    android:text="VOID AMOUNT"
+                    android:gravity="left|center"
+                    android:textSize="14sp"
+                    android:layout_weight="1"
+                    android:textStyle="normal" />
+                <TextView
+                    android:layout_width="4dp"
+                    android:layout_height="match_parent"
+                    android:text=":"
+                    android:gravity="left|center"
+                    android:textSize="14sp"
+                    android:layout_weight="1"
+                    android:textStyle="bold" />
+
+                <TextView
+                    android:layout_width="128dp"
+                    android:layout_height="match_parent"
+                    android:text="0.00"
+                    android:id="@+id/vVoidAmount"
+                    android:gravity="right|center"
+                    android:textSize="14sp"
+                    android:layout_weight="1"
+                    android:textStyle="normal" />
+
+            </LinearLayout>
+
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="0dp"
+                android:layout_weight=".1"
+                android:weightSum="2"
+                android:gravity="center_horizontal"
+                android:orientation="horizontal" >
+
+                <TextView
+                    android:layout_width="180dp"
+                    android:layout_height="match_parent"
+                    android:text="TOTAL"
+                    android:gravity="left|center"
+                    android:textSize="14sp"
+                    android:layout_weight="1"
+                    android:textStyle="bold" />
+
+                <TextView
+                    android:layout_width="128dp"
+                    android:layout_height="match_parent"
+                    android:text="0.00"
+                    android:id="@+id/vTotalCashDt"
+                    android:gravity="right|center"
+                    android:textSize="14sp"
+                    android:layout_weight="1"
+                    android:textStyle="normal" />
+
+            </LinearLayout>
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="0dp"
+                android:layout_weight=".1"
+                android:weightSum="1"
+                android:gravity="center_horizontal"
+                android:orientation="vertical" >
+
+                <TextView
+                    android:layout_width="match_parent"
+                    android:layout_height="match_parent"
+                    android:text="@string/cash_detail2"
+                    android:id="@+id/tCashierDt"
+                    android:gravity="left|center"
+                    android:textSize="14sp"
+                    android:layout_weight="1"
+                    android:textStyle="bold" />
+
+            </LinearLayout>
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="0dp"
+                android:layout_weight=".1"
+                android:weightSum="3"
+                android:gravity="center_horizontal"
+                android:orientation="horizontal" >
+
+                <TextView
+                    android:layout_width="180dp"
+                    android:layout_height="match_parent"
+                    android:text="CASH"
+                    android:gravity="left|center"
+                    android:textSize="14sp"
+                    android:layout_weight="1"
+                    android:textStyle="normal" />
+
+                <TextView
+                    android:layout_width="4dp"
+                    android:layout_height="match_parent"
+                    android:text=":"
+                    android:gravity="left|center"
+                    android:textSize="14sp"
+                    android:layout_weight="1"
+                    android:textStyle="bold" />
+
+                <TextView
+                    android:layout_width="128dp"
+                    android:layout_height="match_parent"
+                    android:text="0.00"
+                    android:id="@+id/vCashCashier"
+                    android:gravity="right|center"
+                    android:textSize="14sp"
+                    android:layout_weight="1"
+                    android:textStyle="normal" />
+
+            </LinearLayout>
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="0dp"
+                android:layout_weight=".1"
+                android:weightSum="1"
+                android:visibility="gone"
+                android:gravity="center_horizontal"
+                android:orientation="vertical" >
+
+                <TextView
+                    android:layout_width="match_parent"
+                    android:layout_height="match_parent"
+                    android:text="0.00"
+                    android:id="@+id/vTotalCashCashier"
+                    android:gravity="right|center"
+                    android:textSize="14sp"
+                    android:layout_weight="1"
+                    android:textStyle="normal" />
+
+            </LinearLayout>
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="0dp"
+                android:layout_weight=".1"
+                android:weightSum="1"
+                android:gravity="center_horizontal"
+                android:orientation="vertical" >
+
+                <TextView
+                    android:layout_width="match_parent"
+                    android:layout_height="match_parent"
+                    android:text="@string/bill"
+                    android:id="@+id/tBill"
+                    android:gravity="left|center"
+                    android:textSize="14sp"
+                    android:layout_weight="1"
+                    android:textStyle="bold" />
+
+            </LinearLayout>
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="0dp"
+                android:layout_weight=".1"
+                android:weightSum="3"
+                android:gravity="center_horizontal"
+                android:orientation="horizontal" >
+
+                <TextView
+                    android:layout_width="180dp"
+                    android:layout_height="match_parent"
+                    android:text="NO OF RECEIPT"
+                    android:gravity="left|center"
+                    android:textSize="14sp"
+                    android:layout_weight="1"
+                    android:textStyle="normal" />
+
+                <TextView
+                    android:layout_width="4dp"
+                    android:layout_height="match_parent"
+                    android:text=":"
+                    android:gravity="left|center"
+                    android:textSize="14sp"
+                    android:layout_weight="1"
+                    android:textStyle="bold" />
+
+                <TextView
+                    android:layout_width="128dp"
+                    android:layout_height="match_parent"
+                    android:text="0.00"
+                    android:id="@+id/vNoOfReceipt"
+                    android:gravity="right|center"
+                    android:textSize="14sp"
+                    android:layout_weight="1"
+                    android:textStyle="normal" />
+
+            </LinearLayout>
+
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="0dp"
+                android:layout_weight=".1"
+                android:weightSum="3"
+                android:gravity="center_horizontal"
+                android:orientation="horizontal" >
+
+                <TextView
+                    android:layout_width="180dp"
+                    android:layout_height="match_parent"
+                    android:text="NO OF VOID"
+                    android:gravity="left|center"
+                    android:textSize="14sp"
+                    android:layout_weight="1"
+                    android:textStyle="normal" />
+
+                <TextView
+                    android:layout_width="4dp"
+                    android:layout_height="match_parent"
+                    android:text=":"
+                    android:gravity="left|center"
+                    android:textSize="14sp"
+                    android:layout_weight="1"
+                    android:textStyle="bold" />
+
+                <TextView
+                    android:layout_width="128dp"
+                    android:layout_height="match_parent"
+                    android:text="0.00"
+                    android:id="@+id/vNoOfVoid"
+                    android:gravity="right|center"
+                    android:textSize="14sp"
+                    android:layout_weight="1"
+                    android:textStyle="normal" />
+
+            </LinearLayout>
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="0dp"
+                android:layout_weight=".1"
+                android:weightSum="1"
+                android:gravity="center_horizontal"
+                android:orientation="vertical" >
+
+                <TextView
+                    android:layout_width="match_parent"
+                    android:layout_height="match_parent"
+                    android:text="@string/gst"
+                    android:id="@+id/tGST"
+                    android:gravity="left|center"
+                    android:textSize="14sp"
+                    android:layout_weight="1"
+                    android:textStyle="bold" />
+
+            </LinearLayout>
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="0dp"
+                android:layout_weight=".1"
+                android:weightSum="3"
+                android:gravity="center_horizontal"
+                android:orientation="horizontal" >
+
+                <TextView
+                    android:layout_width="180dp"
+                    android:layout_height="match_parent"
+                    android:text="GST AMOUNT"
+                    android:gravity="left|center"
+                    android:textSize="14sp"
+                    android:layout_weight="1"
+                    android:textStyle="normal" />
+
+                <TextView
+                    android:layout_width="4dp"
+                    android:layout_height="match_parent"
+                    android:text=":"
+                    android:gravity="left|center"
+                    android:textSize="14sp"
+                    android:layout_weight="1"
+                    android:textStyle="bold" />
+
+                <TextView
+                    android:layout_width="128dp"
+                    android:layout_height="match_parent"
+                    android:text="0.00"
+                    android:id="@+id/vGSTAmt"
+                    android:gravity="right|center"
+                    android:textSize="14sp"
+                    android:layout_weight="1"
+                    android:textStyle="normal" />
+
+            </LinearLayout>
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="0dp"
+                android:layout_weight=".15"
+                android:gravity="center_horizontal"
+                android:orientation="horizontal" >
+                <Button
+                    android:layout_width="wrap_content"
+                    android:layout_height="match_parent"
+                    android:text="PRINT"
+                    android:id="@+id/btnPrint"
+                    android:gravity="center"
+                    android:textSize="14sp"
+                    android:textStyle="bold"
+                    android:textColor="@color/cardview_light_background"
+                    android:background="@color/colorPrimaryDark" />
+            </LinearLayout>
+
+
+        </LinearLayout>
+
+    </LinearLayout>
+
+</ScrollView>

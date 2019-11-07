@@ -1,0 +1,30 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent" android:layout_height="match_parent">
+
+    <LinearLayout
+        android:layout_width="fill_parent"
+        android:layout_height="45dp"
+        android:weightSum="1"
+        android:gravity="center_horizontal"
+        android:paddingLeft="6dp"
+        android:paddingRight="6dp"
+        android:orientation="horizontal" >
+
+        <TextView
+            android:id="@+id/txtPaymentCode"
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:layout_weight="1"
+            android:text="Doc1No"
+            android:layout_marginLeft="2dp"
+            android:gravity="left|center"
+            android:textSize="15sp"
+            android:layout_marginTop="2dp"
+            android:layout_marginBottom="2dp"
+            android:textStyle="normal|bold" />
+
+
+    </LinearLayout>
+
+</RelativeLayout>

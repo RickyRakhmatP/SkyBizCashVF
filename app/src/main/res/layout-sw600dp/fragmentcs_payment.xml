@@ -1,0 +1,403 @@
+<?xml version="1.0" encoding="utf-8"?>
+<android.support.v4.widget.SwipeRefreshLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="wrap_content"
+    android:id="@+id/swipePayment"
+    android:layout_height="wrap_content">
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent">
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:layout_margin="5dp">
+
+                    <LinearLayout
+                        android:layout_width="match_parent"
+                        android:layout_height="match_parent"
+                        android:orientation="vertical"
+                        android:weightSum="1">
+
+                        <LinearLayout
+                            android:layout_width="match_parent"
+                            android:layout_height="0dp"
+                            android:layout_weight=".09"
+                            android:weightSum="4"
+                            android:gravity="center_horizontal"
+                            android:orientation="horizontal"
+                            android:background="#212121">
+
+                            <TextView
+                                android:layout_width="0dp"
+                                android:layout_height="match_parent"
+                                android:layout_weight="0.8"
+                                android:text="@string/strTotalQty"
+                                android:id="@+id/tTotalQty"
+                                android:gravity="left|center_vertical"
+                                android:paddingLeft="2dp"
+                                android:paddingRight="1dp"
+                                android:textStyle="bold"
+                                android:background="#f44336"
+                               android:textSize="21sp"
+                                android:textColor="@color/colorWhite"/>
+
+                            <TextView
+                                android:layout_width="0dp"
+                                android:layout_height="match_parent"
+                                android:layout_weight="1.0"
+                                android:text="0.00"
+                                android:id="@+id/txtTotalQty"
+                                android:gravity="right|center_vertical"
+                                android:textStyle="bold"
+                                android:paddingRight="5dp"
+                                android:background="#f44336"
+                               android:textSize="21sp"
+                                android:textColor="@color/colorWhite"/>
+
+                            <TextView
+                                android:layout_width="0dp"
+                                android:layout_height="match_parent"
+                                android:layout_weight="1.0"
+                                android:text="@string/strGross"
+                                android:id="@+id/tTotal"
+                                android:gravity="left|center"
+                                android:paddingLeft="2dp"
+                                android:paddingRight="2dp"
+                                android:textStyle="bold"
+                               android:textSize="21sp"
+                                android:textColor="#00c853"/>
+
+                            <TextView
+                                android:layout_width="0dp"
+                                android:layout_height="match_parent"
+                                android:layout_weight="1.2"
+                                android:text="0.00"
+                                android:id="@+id/txtTotal"
+                                android:gravity="right|center"
+                                android:paddingLeft="2dp"
+                                android:paddingRight="2dp"
+                                android:textStyle="bold"
+                               android:textSize="21sp"
+                                android:textColor="#00c853"/>
+
+                        </LinearLayout>
+
+
+                        <LinearLayout
+                            android:layout_width="match_parent"
+                            android:layout_height="0dp"
+                            android:layout_weight=".09"
+                            android:layout_marginTop="2dp"
+                            android:background="#f44336"
+                            android:weightSum="4"
+                            android:gravity="center_horizontal"
+                            android:orientation="horizontal" >
+
+                            <TextView
+                                android:layout_width="0dp"
+                                android:layout_height="match_parent"
+                                android:layout_weight="0.8"
+                                android:text="Change"
+                                android:id="@+id/tChange"
+                                android:gravity="left|center_vertical"
+                                android:paddingLeft="2dp"
+                                android:paddingRight="2dp"
+                                android:textStyle="bold"
+                               android:textSize="21sp"
+                                android:textColor="@color/colorWhite"/>
+
+                            <TextView
+                                android:layout_width="0dp"
+                                android:layout_height="match_parent"
+                                android:layout_weight="1.0"
+                                android:text="0.00"
+                                android:id="@+id/txtChange"
+                                android:gravity="right|center_vertical"
+                                android:textStyle="bold"
+                               android:textSize="21sp"
+                                android:paddingRight="2dp"
+                                android:paddingLeft="2dp"
+                                android:textColor="@color/colorWhite"/>
+
+                            <TextView
+                                android:layout_width="0dp"
+                                android:layout_height="match_parent"
+                                android:layout_weight="1.0"
+                                android:text="Amount Due"
+                                android:id="@+id/tAmountDue"
+                                android:gravity="left|center"
+                                android:paddingLeft="2dp"
+                                android:paddingRight="2dp"
+                                android:textStyle="bold"
+                               android:textSize="21sp"
+                                android:background="#212121"
+                                android:textColor="#00c853"/>
+
+                            <TextView
+                                android:layout_width="0dp"
+                                android:layout_height="match_parent"
+                                android:layout_weight="1.2"
+                                android:text="0.00"
+                                android:id="@+id/txtAmountDue"
+                                android:gravity="right|center"
+                                android:paddingLeft="2dp"
+                                android:paddingRight="2dp"
+                                android:textStyle="bold"
+                                android:textSize="21sp"
+                                android:background="#212121"
+                                android:textColor="#00c853"/>
+
+                            <TextView
+                                android:layout_width="0dp"
+                                android:layout_height="match_parent"
+                                android:layout_weight="1.2"
+                                android:text="0.00"
+                                android:id="@+id/txtAdjAmt"
+                                android:gravity="right|center"
+                                android:paddingLeft="2dp"
+                                android:paddingRight="2dp"
+                                android:textStyle="bold"
+                                android:textSize="21sp"
+                                android:background="#212121"
+                                android:textColor="#00c853"
+                                android:visibility="gone"/>
+
+                        </LinearLayout>
+
+                        <LinearLayout
+                            android:layout_width="match_parent"
+                            android:layout_height="0dp"
+                            android:layout_weight=".09"
+                            android:layout_marginTop="2dp"
+                            android:weightSum="4"
+                            android:gravity="center_horizontal"
+                            android:orientation="horizontal" >
+
+
+                            <TextView
+                                android:layout_width="0dp"
+                                android:layout_height="match_parent"
+                                android:layout_weight="1.8"
+                                android:text="Cash"
+                                android:id="@+id/txtTypePay"
+                                android:textColor="@color/colorWhite"
+                                android:background="@color/colorPrimary"
+                                android:gravity="center"
+                                android:textSize="20sp"
+                                android:textStyle="bold"
+                                android:paddingLeft="2dp"
+                                android:paddingRight="2dp"/>
+
+                            <TextView
+                                android:layout_width="0dp"
+                                android:layout_height="match_parent"
+                                android:layout_weight="1.8"
+                                android:text="Cash"
+                                android:id="@+id/txtCC1Code"
+                                android:textColor="@color/colorWhite"
+                                android:background="@color/colorPrimary"
+                                android:gravity="center"
+                                android:textSize="20sp"
+                                android:textStyle="bold"
+                                android:paddingLeft="2dp"
+                                android:paddingRight="2dp"
+                                android:visibility="gone"/>
+
+
+                            <TextView
+                                android:layout_width="0dp"
+                                android:layout_height="match_parent"
+                                android:layout_weight="0.4"
+                                android:text="RM"
+                                android:gravity="right|center"
+                                android:id="@+id/txtCurCode"
+                                android:background="#ffc107"
+                                android:textStyle="bold"
+                                android:textSize="20sp"
+                                android:paddingLeft="2dp"
+                                android:paddingRight="2dp"
+                                android:textColor="@android:color/black" />
+
+                            <EditText
+                                android:layout_width="0dp"
+                                android:layout_height="match_parent"
+                                android:layout_weight="1.8"
+                                android:hint="0.00"
+                                android:gravity="right|center_vertical"
+                                android:inputType="text"
+                                android:id="@+id/txtPaidAmount"
+                                android:background="#ffc107"
+                                android:textSize="24sp"
+                                android:textStyle="bold"
+                                android:paddingLeft="2dp"
+                                android:paddingRight="2dp"
+                                android:textColor="@android:color/black"/>
+
+                            <EditText
+                                android:layout_width="0dp"
+                                android:layout_height="match_parent"
+                                android:layout_weight="1.8"
+                                android:hint="0.00"
+                                android:gravity="right|center_vertical"
+                                android:inputType="text"
+                                android:id="@+id/txtCC1No"
+                                android:background="#ffc107"
+                                android:textSize="24sp"
+                                android:textStyle="bold"
+                                android:paddingLeft="2dp"
+                                android:paddingRight="2dp"
+                                android:textColor="@android:color/black"
+                                android:visibility="gone"/>
+
+
+                        </LinearLayout>
+
+                        <LinearLayout
+                            android:layout_width="match_parent"
+                            android:layout_height="0dp"
+                            android:layout_weight=".46"
+                            android:id="@+id/lnKeyboard">
+
+                            <skybiz.com.posoffline.KeyboardPay
+                                android:layout_width="match_parent"
+                                android:layout_height="match_parent"
+                                android:orientation="vertical"
+                                android:id="@+id/keyboardpay">
+
+                            </skybiz.com.posoffline.KeyboardPay>
+
+                        </LinearLayout>
+
+
+                        <LinearLayout
+                            android:layout_width="match_parent"
+                            android:layout_height="0dp"
+                            android:layout_weight=".09"
+                            android:orientation="horizontal"
+                            android:weightSum="2"
+                            android:layout_marginBottom="1dp"
+                            android:layout_marginTop="1dp">
+
+                            <Button
+                                android:layout_width="0dp"
+                                android:layout_height="match_parent"
+                                android:layout_weight="1"
+                                android:text="Exact"
+                                android:id="@+id/btnExact"
+                                android:layout_marginLeft="1dp"
+                                android:layout_marginRight="1dp"
+                                android:textStyle="bold"
+                                android:textSize="21sp"
+                                android:layout_gravity="right"
+                                android:textColor="@android:color/white"
+                                android:background="@color/color_danger" />
+
+                            <Button
+                                android:layout_width="0dp"
+                                android:layout_height="match_parent"
+                                android:layout_weight="1"
+                                android:text="PAY"
+                                android:id="@+id/btnPay"
+                                android:layout_marginLeft="1dp"
+                                android:layout_marginRight="1dp"
+                                android:textStyle="bold"
+                                android:textSize="21sp"
+                                android:layout_gravity="right"
+                                android:textColor="@android:color/white"
+                                android:background="@color/color_danger" />
+
+                        </LinearLayout>
+
+
+                        <LinearLayout
+                            android:layout_width="match_parent"
+                            android:layout_height="0dp"
+                            android:layout_weight=".09"
+                            android:orientation="horizontal"
+                            android:layout_marginBottom="2dp"
+                            android:layout_marginTop="2dp"
+                            android:weightSum="3">
+
+                            <TextView
+                                android:layout_width="0dp"
+                                android:layout_height="match_parent"
+                                android:layout_weight="2"
+                                android:text="xxxx"
+                                android:gravity="left|center"
+                                android:id="@+id/txtDoc1No"
+                               android:textSize="21sp"
+                                android:textStyle="normal|bold" />
+
+                            <EditText
+                                android:layout_width="0dp"
+                                android:layout_height="match_parent"
+                                android:layout_weight="1"
+                                android:background="@drawable/border"
+                                android:id="@+id/txtDoc2No"
+                                android:paddingLeft="4dp"
+                                android:paddingRight="4dp"
+                                android:hint="Payment Note 1"
+                                android:gravity="left|center"
+                                android:textSize="21sp"
+                                android:visibility="gone"/>
+
+
+                            <ProgressBar
+                                android:id="@+id/pbSave"
+                                android:layout_width="0dp"
+                                android:layout_height="match_parent"
+                                android:layout_weight="1"
+                                android:visibility="gone"
+                                style="?actionBarPopupTheme" />
+
+                            <EditText
+                                android:layout_width="0dp"
+                                android:layout_height="match_parent"
+                                android:layout_weight="1"
+                                android:background="@drawable/border"
+                                android:id="@+id/txtDoc3No"
+                                android:paddingLeft="4dp"
+                                android:paddingRight="4dp"
+                                android:hint="Payment Note 2"
+                                android:gravity="left|center"
+                                android:textSize="21sp"
+                                android:visibility="gone"/>
+
+                        </LinearLayout>
+
+
+                        <LinearLayout
+                            android:layout_width="match_parent"
+                            android:layout_height="0dp"
+                            android:layout_weight=".09"
+                            android:orientation="horizontal"
+                            android:layout_marginBottom="2dp"
+                            android:layout_marginTop="2dp"
+                            android:weightSum="3">
+
+
+                            <EditText
+                                android:layout_width="0dp"
+                                android:layout_height="match_parent"
+                                android:layout_weight="1"
+                                android:background="@drawable/border"
+                                android:id="@+id/txtSalesPersonCode"
+                                android:paddingLeft="4dp"
+                                android:paddingRight="4dp"
+                                android:hint="Sales Person Code *"
+                                android:gravity="left|center"
+                                android:textSize="21sp"
+                                android:visibility="gone"/>
+
+
+
+                        </LinearLayout>
+
+
+                    </LinearLayout>
+
+        </LinearLayout>
+
+    </LinearLayout>
+</android.support.v4.widget.SwipeRefreshLayout>

@@ -1,0 +1,80 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:orientation="vertical"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent">
+
+    <LinearLayout
+        android:layout_width="650dp"
+        android:layout_height="600dp"
+        android:weightSum="2"
+        android:orientation="vertical"
+        android:layout_margin="8dp">
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="0dp"
+            android:layout_marginBottom="8dp"
+            android:layout_marginTop="8dp"
+            android:layout_weight="0.2"
+            android:weightSum="3"
+            android:orientation="horizontal">
+
+                <EditText
+                    android:layout_width="0dp"
+                    android:layout_height="match_parent"
+                    android:layout_weight="1.25"
+                    android:layout_marginRight="2dp"
+                    android:layout_marginLeft="6dp"
+                    android:paddingLeft="6dp"
+                    android:paddingRight="6dp"
+                    android:hint="Date From"
+                    android:id="@+id/txtDateFrom"
+                    android:background="@drawable/border"
+                    android:textSize="21sp"/>
+
+                <EditText
+                    android:layout_width="0dp"
+                    android:layout_height="match_parent"
+                    android:layout_weight="1.25"
+                    android:layout_marginRight="2dp"
+                    android:layout_marginLeft="2dp"
+                    android:paddingLeft="6dp"
+                    android:paddingRight="6dp"
+                    android:hint="Date To"
+                    android:id="@+id/txtDateTo"
+                    android:background="@drawable/border"
+                    android:textSize="21sp"/>
+
+                <Button
+                    android:layout_width="0dp"
+                    android:layout_height="match_parent"
+                    android:layout_weight="0.5"
+                    android:layout_marginLeft="2dp"
+                    android:layout_marginRight="2dp"
+                    android:text="R"
+                    android:id="@+id/btnRefresh"
+                    android:background="@color/color_primary"
+                    android:textColor="@color/colorWhite"
+                    android:textSize="24sp"/>
+
+        </LinearLayout>
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="0dp"
+            android:layout_weight="1.8">
+
+            <android.support.v7.widget.RecyclerView
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+
+                android:id="@+id/rvReprint">
+
+            </android.support.v7.widget.RecyclerView>
+
+        </LinearLayout>
+
+    </LinearLayout>
+
+</LinearLayout>

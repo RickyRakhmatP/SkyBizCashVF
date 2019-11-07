@@ -1,0 +1,152 @@
+<?xml version="1.0" encoding="utf-8"?>
+<android.support.constraint.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context=".ui_Member.MenuMember">
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:layout_margin="10dp"
+        android:weightSum="2"
+        android:orientation="vertical">
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="0dp"
+            android:layout_marginTop="2dp"
+            android:layout_marginBottom="2dp"
+            android:layout_weight="0.6"
+            android:background="@drawable/banner_point">
+            
+        </LinearLayout>
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="0dp"
+            android:layout_marginTop="2dp"
+            android:layout_marginBottom="2dp"
+            android:layout_weight="1.4"
+            android:weightSum="1"
+            android:orientation="vertical">
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="0dp"
+                android:layout_weight="0.20"
+                android:orientation="horizontal"
+                android:background="@drawable/border2"
+                android:layout_marginTop="2dp"
+                android:layout_marginBottom="2dp"
+                android:weightSum="2">
+
+                <TextView
+                    android:layout_width="0dp"
+                    android:layout_height="match_parent"
+                    android:layout_weight="1.7"
+                    android:paddingLeft="4dp"
+                    android:paddingRight="4dp"
+                    android:text="Point Redemption"
+                    android:textSize="24sp"
+                    android:gravity="left|center"
+                    android:textColor="@color/colorBlack"
+                    android:textStyle="bold"
+                    android:id="@+id/txtPointRedeem"/>
+
+                <TextView
+                    android:layout_width="0dp"
+                    android:layout_height="match_parent"
+                    android:layout_weight="0.3"
+                    android:drawableTop="@drawable/ic_right"
+                    android:textSize="24sp"
+                    android:gravity="right"
+                    android:paddingTop="30dp"
+                    android:textColor="@color/colorBlack"
+                    android:textStyle="bold"
+                    android:id="@+id/vPointRedeem"/>
+
+            </LinearLayout>
+
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="0dp"
+                android:layout_weight="0.20"
+                android:layout_marginTop="2dp"
+                android:layout_marginBottom="2dp"
+                android:orientation="horizontal"
+                android:background="@drawable/border2"
+                android:weightSum="2">
+
+                <TextView
+                    android:layout_width="0dp"
+                    android:layout_height="match_parent"
+                    android:layout_weight="1.7"
+                    android:paddingLeft="4dp"
+                    android:paddingRight="4dp"
+                    android:text="Point Ledger"
+                    android:textSize="24sp"
+                    android:gravity="left|center"
+                    android:textColor="@color/colorBlack"
+                    android:textStyle="bold"
+                    android:id="@+id/txtPointLedger"/>
+
+                <TextView
+                    android:layout_width="0dp"
+                    android:layout_height="match_parent"
+                    android:layout_weight="0.3"
+                    android:drawableTop="@drawable/ic_right"
+                    android:textSize="24sp"
+                    android:gravity="right"
+                    android:paddingTop="30dp"
+                    android:textColor="@color/colorBlack"
+                    android:textStyle="bold"
+                    android:id="@+id/vPointLedger"/>
+
+            </LinearLayout>
+
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="0dp"
+                android:layout_weight="0.20"
+                android:layout_marginTop="2dp"
+                android:layout_marginBottom="2dp"
+                android:orientation="horizontal"
+                android:background="@drawable/border2"
+                android:weightSum="2">
+
+                <TextView
+                    android:layout_width="0dp"
+                    android:layout_height="match_parent"
+                    android:layout_weight="1.7"
+                    android:paddingLeft="4dp"
+                    android:paddingRight="4dp"
+                    android:text="Member List"
+                    android:textSize="24sp"
+                    android:gravity="left|center"
+                    android:textColor="@color/colorBlack"
+                    android:textStyle="bold"
+                    android:id="@+id/txtMemberList"/>
+
+                <TextView
+                    android:layout_width="0dp"
+                    android:layout_height="match_parent"
+                    android:layout_weight="0.3"
+                    android:drawableTop="@drawable/ic_right"
+                    android:textSize="24sp"
+                    android:gravity="right"
+                    android:paddingTop="30dp"
+                    android:textColor="@color/colorBlack"
+                    android:textStyle="bold"
+                    android:id="@+id/vMemberList"/>
+
+            </LinearLayout>
+
+        </LinearLayout>
+
+    </LinearLayout>
+
+</android.support.constraint.ConstraintLayout>

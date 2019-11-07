@@ -1,0 +1,151 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical"
+    android:padding="10dp" >
+
+
+    <LinearLayout
+        android:layout_width="fill_parent"
+        android:layout_height="65dp"
+        android:weightSum="2"
+        android:layout_marginTop="5dp"
+        android:layout_marginBottom="5dp"
+        android:gravity="center_horizontal"
+        android:orientation="horizontal" >
+
+        <TextView
+            android:id="@+id/txtType"
+            android:layout_width="170dp"
+            android:layout_height="match_parent"
+            android:layout_marginBottom="2dp"
+            android:textSize="17sp"
+            android:gravity="left|center"
+            android:layout_weight="1"
+            android:ems="10"
+            android:text="Choose Printer Port" />
+
+        <Spinner
+            android:id="@+id/spTypePrinter"
+            android:layout_width="180dp"
+            android:layout_height="match_parent"
+            android:gravity="left|center"
+            android:ems="10"
+            android:layout_weight="1">
+
+        </Spinner>
+
+    </LinearLayout>
+
+    <LinearLayout
+        android:id="@+id/ln_Bluetooth"
+        android:visibility="gone"
+        android:layout_width="fill_parent"
+        android:layout_height="55dp"
+        android:weightSum="2"
+        android:layout_marginTop="3dp"
+        android:layout_marginBottom="3dp"
+        android:gravity="center_horizontal"
+        android:orientation="horizontal" >
+
+        <TextView
+            android:id="@+id/txtDevice"
+            android:layout_width="170dp"
+            android:layout_height="match_parent"
+            android:layout_marginBottom="2dp"
+            android:textSize="17sp"
+            android:gravity="left|center"
+            android:layout_weight="1"
+            android:ems="10"
+            android:text="Device Bluetooth" />
+
+        <Spinner
+            android:id="@+id/spListBT"
+            android:layout_width="180dp"
+            android:layout_height="match_parent"
+            android:gravity="left|center"
+            android:ems="10"
+            android:layout_weight="1">
+
+        </Spinner>
+
+    </LinearLayout>
+
+    <LinearLayout
+        android:id="@+id/ln_WIFI"
+        android:visibility="gone"
+        android:layout_width="fill_parent"
+        android:layout_height="55dp"
+        android:weightSum="2"
+        android:layout_marginTop="3dp"
+        android:layout_marginBottom="3dp"
+        android:gravity="center_horizontal"
+        android:orientation="horizontal" >
+        <EditText
+            android:id="@+id/txtIPAddress"
+            android:layout_width="170dp"
+            android:layout_height="match_parent"
+            android:ems="10"
+            android:gravity="left|center"
+            android:hint="IP Address"
+            android:layout_weight="1"
+            android:inputType="text">
+
+        </EditText>
+
+        <EditText
+            android:id="@+id/txtPort"
+            android:layout_width="80dp"
+            android:layout_height="match_parent"
+            android:ems="10"
+            android:gravity="left|center"
+            android:hint="Port"
+            android:layout_weight="1"
+            android:inputType="text">
+
+        </EditText>
+
+        <Button
+            android:id="@+id/btn_checkwifi"
+            android:layout_width="100dp"
+            android:layout_height="match_parent"
+            android:layout_weight="1"
+            android:gravity="center"
+            android:text="Check Connection"
+            android:background="@android:color/holo_green_dark"
+            android:textColor="@android:color/background_light" />
+    </LinearLayout>
+
+    <LinearLayout
+        android:layout_width="fill_parent"
+        android:layout_height="wrap_content"
+        android:weightSum="2"
+        android:layout_marginTop="6dp"
+        android:layout_marginBottom="6dp"
+        android:gravity="center_horizontal"
+        android:orientation="horizontal" >
+
+        <Button
+            android:id="@+id/btnp_cancel"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_weight="1"
+            android:layout_marginRight="4dp"
+            android:text="Back"
+            android:textColor="@color/colorWhite"
+            android:background="@color/color_primary" />
+        <Button
+            android:id="@+id/btnp_save"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_weight="1"
+            android:layout_marginLeft="4dp"
+            android:text="Save Changes"
+            android:background="@color/colorOrange"
+            android:textColor="@color/colorWhite" />
+
+
+    </LinearLayout>
+
+</LinearLayout>

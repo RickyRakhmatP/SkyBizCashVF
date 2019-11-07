@@ -1,0 +1,128 @@
+<?xml version="1.0" encoding="utf-8"?>
+<android.support.v7.widget.CardView xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:id="@+id/card_view"
+    android:layout_width="match_parent"
+    android:layout_height="70dp"
+    android:layout_marginBottom="3dp"
+    android:layout_marginLeft="3dp"
+    android:layout_marginRight="3dp">
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:orientation="horizontal"
+        android:weightSum="5"
+        android:id="@+id/lnTrn">
+
+        <LinearLayout
+            android:layout_width="0dp"
+            android:layout_height="match_parent"
+            android:layout_weight="1.2"
+            android:orientation="horizontal">
+
+            <TextView
+                android:id="@+id/vDoc1No"
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                android:gravity="left|center"
+                android:textColor="@color/cardview_dark_background"
+                android:textSize="13sp"
+                android:text="Ref #"
+                android:paddingLeft="3dp"
+                android:layout_weight="1"
+                android:textStyle="normal" />
+        </LinearLayout>
+
+        <LinearLayout
+            android:layout_width="0dp"
+            android:layout_height="match_parent"
+            android:layout_weight="1.2"
+            android:orientation="horizontal">
+
+            <TextView
+                android:id="@+id/vDateTime"
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                android:gravity="left|center"
+                android:textColor="@color/cardview_dark_background"
+                android:textSize="13sp"
+                android:text="Date Time"
+                android:layout_weight="1"
+                android:textStyle="normal" />
+
+        </LinearLayout>
+
+        <LinearLayout
+            android:layout_width="0dp"
+            android:layout_height="match_parent"
+            android:layout_weight=".6"
+            android:orientation="horizontal">
+
+            <TextView
+                android:id="@+id/vQty"
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                android:gravity="right|center"
+                android:textColor="@color/cardview_dark_background"
+                android:textSize="13sp"
+                android:text="Qty"
+                android:paddingRight="3dp"
+                android:layout_weight="1"
+                android:textStyle="normal" />
+
+        </LinearLayout>
+
+        <LinearLayout
+            android:layout_width="0dp"
+            android:layout_height="match_parent"
+            android:layout_weight="1"
+            android:orientation="horizontal">
+
+            <TextView
+                android:id="@+id/vTotalAmt"
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                android:gravity="right|center"
+                android:textColor="@color/cardview_dark_background"
+                android:textSize="13sp"
+                android:text="Total Amt"
+                android:paddingRight="3dp"
+                android:layout_weight="1"
+                android:textStyle="normal" />
+
+        </LinearLayout>
+
+        <LinearLayout
+            android:layout_width="0dp"
+            android:layout_height="match_parent"
+            android:layout_weight="1"
+            android:orientation="horizontal">
+
+            <TextView
+                android:id="@+id/vSynYN"
+                android:layout_width="0dp"
+                android:layout_height="match_parent"
+                android:gravity="center"
+                android:textColor="@color/cardview_dark_background"
+                android:textSize="13sp"
+                android:layout_weight=".5"
+                android:textStyle="normal" />
+
+            <TextView
+                android:id="@+id/vDelete"
+                android:layout_width="0dp"
+                android:layout_height="match_parent"
+                android:gravity="center"
+                android:textColor="@color/cardview_dark_background"
+                android:textSize="13sp"
+                android:paddingTop="20dp"
+                android:drawableTop="@drawable/ic_delete"
+                android:layout_weight=".5"
+                android:textStyle="normal" />
+
+        </LinearLayout>
+
+    </LinearLayout>
+
+</android.support.v7.widget.CardView>

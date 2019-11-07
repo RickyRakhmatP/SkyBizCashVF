@@ -1,0 +1,62 @@
+<?xml version="1.0" encoding="utf-8"?>
+<FrameLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent" >
+
+    <SurfaceView
+        android:id="@+id/surface_view"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent" />
+
+    <skybiz.com.posoffline.m_Scan.FinderView
+        android:id="@+id/finder_view"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent" />
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="70dp"
+        android:weightSum="1"
+        android:orientation="horizontal">
+
+        <TextView
+            android:layout_width="0dp"
+            android:layout_height="match_parent"
+            android:layout_weight="0.6"
+            android:id="@+id/textview"
+            android:background="@android:color/white"
+            android:gravity="center_vertical"
+            android:textColor="@color/colorOrange"
+            android:textSize="24sp"
+            android:textStyle="bold"
+            android:layout_marginLeft="2dp"
+            android:layout_marginRight="2dp"/>
+
+        <Button
+            android:layout_width="0dp"
+            android:layout_height="match_parent"
+            android:layout_weight="0.2"
+            android:text="ReScan"
+            android:background="@color/color_primary"
+            android:textColor="@color/colorWhite"
+            android:id="@+id/btnReScan"
+            android:layout_marginLeft="2dp"
+            android:layout_marginRight="2dp"/>
+
+        <Button
+            android:layout_width="0dp"
+            android:layout_height="match_parent"
+            android:layout_weight="0.2"
+            android:text="Confirm"
+            android:background="@color/color_warning"
+            android:textColor="@color/colorWhite"
+            android:id="@+id/btnConfirm"
+            android:layout_marginLeft="2dp"
+            android:layout_marginRight="2dp"/>
+
+    </LinearLayout>
+
+
+
+</FrameLayout>

@@ -1,0 +1,102 @@
+<?xml version="1.0" encoding="utf-8"?>
+<android.support.v7.widget.CardView xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:id="@+id/card_view"
+    android:layout_width="match_parent"
+    android:layout_height="195dp"
+    android:layout_marginBottom="3dp"
+    android:layout_marginLeft="3dp"
+    android:layout_marginRight="3dp">
+
+    <RelativeLayout
+        android:layout_width="match_parent"
+        android:layout_height="fill_parent">
+
+       <ImageView
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:padding="2dp"
+            android:id="@+id/vPhotoFile" />
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:weightSum="4"
+            android:orientation="vertical"
+            android:background="#7000"
+            android:id="@+id/lnDesc">
+
+            <TextView
+                android:layout_width="match_parent"
+                android:layout_height="0dp"
+                android:layout_weight="1"
+                android:text="Item Code"
+                android:gravity="center"
+                android:id="@+id/vItemCode"
+                android:textSize="13sp"
+                android:textColor="@color/colorBlack" />
+
+            <TextView
+                android:layout_width="match_parent"
+                android:layout_height="0dp"
+                android:layout_weight="1.5"
+                android:text="Item Description"
+                android:id="@+id/vDescription"
+                android:gravity="center"
+                android:textSize="13sp"
+                android:textColor="@color/colorBlack"
+                android:layout_marginTop="3dp" />
+
+            <TextView
+                android:layout_width="match_parent"
+                android:layout_height="0dp"
+                android:layout_weight="0.8"
+                android:text="Unit Price"
+                android:id="@+id/vUnitPrice"
+                android:gravity="center"
+                android:textSize="16sp"
+                android:textColor="@color/colorBlack"
+                android:textStyle="bold"
+                android:layout_marginTop="3dp" />
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="0dp"
+                android:layout_weight="0.7"
+                android:weightSum="4"
+                android:orientation="horizontal"
+                android:gravity="center"
+                android:layout_marginBottom="2dp">
+
+                <Button
+                    android:text="-"
+                    android:layout_width="0dp"
+                    android:layout_height="match_parent"
+                    android:layout_weight="1.5"
+                    android:id="@+id/btnMinus"
+                    android:textColor="@color/colorWhite"
+                    android:background="@color/colorOrange"
+                    android:layout_marginLeft="2dp"
+                    android:layout_marginRight="2dp"
+                    android:textSize="25sp" />
+
+
+                <Button
+                    android:text="+"
+                    android:layout_width="0dp"
+                    android:layout_height="match_parent"
+                    android:layout_weight="1.5"
+                    android:id="@+id/btnAdd"
+                    android:textColor="@color/colorWhite"
+                    android:background="@color/colorOrange"
+                    android:layout_marginLeft="2dp"
+                    android:layout_marginRight="2dp"
+                    android:textSize="25sp" />
+
+            </LinearLayout>
+
+        </LinearLayout>
+
+    </RelativeLayout>
+
+</android.support.v7.widget.CardView>

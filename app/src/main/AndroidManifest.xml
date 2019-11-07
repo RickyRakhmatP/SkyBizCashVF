@@ -1,0 +1,157 @@
+<?xml version="1.0" encoding="utf-8"?>
+<manifest xmlns:android="http://schemas.android.com/apk/res/android"
+    package="skybiz.com.posoffline">
+
+    <application
+        android:name=".GlobalApplication"
+        android:allowBackup="true"
+        android:hardwareAccelerated="true"
+        android:icon="@mipmap/ic_launcher"
+        android:label="@string/app_name"
+        android:supportsRtl="true"
+        android:theme="@style/AppTheme">
+        <activity android:name=".m_dbms.AndroidDatabaseManager"
+            android:theme="@style/Theme.AppCompat.Light"/>
+        <activity android:name=".Home"></activity>
+        <activity android:name=".m_Boost.UserScan.BoostUser" />
+        <activity android:name=".ui_CashReceipt.m_Pay.ScanTable" />
+        <activity
+            android:name=".ui_QuickCash.QuickCash"
+            android:windowSoftInputMode="adjustNothing" />
+        <activity android:name=".ui_TopUpNFC.TopUpNFC" />
+        <activity android:name=".ui_RegisterNFC.IssueGiftCard" />
+        <activity android:name=".ui_RegisterNFC.RegisterNFC" />
+        <activity android:name=".ui_UpdateNFC.UpdateNFC" />
+        <activity android:name=".MainActivity">
+            <intent-filter>
+                <action android:name="android.intent.action.MAIN" />
+
+                <category android:name="android.intent.category.LAUNCHER" />
+            </intent-filter>
+        </activity>
+        <activity
+            android:name=".ui_CashReceipt.CashReceipt"
+            android:label="@string/title_activity_cash_receipt"
+            android:theme="@style/AppTheme.NoActionBar"
+            android:windowSoftInputMode="adjustPan" />
+        <activity
+            android:name=".ui_Reports.Reports"
+            android:label="@string/title_activity_reports"
+            android:theme="@style/AppTheme.NoActionBar" />
+        <activity
+            android:name=".ui_Setting.Setting"
+            android:label="@string/title_activity_setting"
+            android:theme="@style/AppTheme.NoActionBar"
+            android:windowSoftInputMode="adjustPan" />
+        <activity
+            android:name=".ui_Sync.Sync"
+            android:label="@string/title_activity_sync"
+            android:theme="@style/AppTheme.NoActionBar" />
+        <activity
+            android:name=".ui_SalesOrder.SalesOrder"
+            android:label="@string/title_activity_sales_order"
+            android:theme="@style/AppTheme.NoActionBar"
+            android:windowSoftInputMode="adjustNothing" />
+        <activity
+            android:name=".ui_CreditNote.CreditNote"
+            android:label="@string/title_activity_credit_note"
+            android:theme="@style/AppTheme.NoActionBar" />
+        <activity
+            android:name=".ui_Listing.Listing"
+            android:label="@string/title_activity_listing"
+            android:theme="@style/AppTheme.NoActionBar"
+            android:windowSoftInputMode="adjustPan" />
+        <activity
+            android:name=".ui_Service.MService"
+            android:label="@string/title_activity_mservice"
+            android:theme="@style/AppTheme.NoActionBar"
+            android:windowSoftInputMode="adjustPan" />
+        <activity android:name=".ui_Member.HistoryPointOld" />
+        <activity
+            android:name=".ui_Member.m_PointLedger.HistoryPoint"
+            android:label="@string/title_activity_history_point"
+            android:theme="@style/AppTheme.NoActionBar" />
+        <activity android:name=".ui_Member.MenuMember" />
+        <activity
+            android:name=".ui_Member.m_PointRedemption.PointRedeem"
+            android:label="@string/title_activity_point_redeem"
+            android:theme="@style/AppTheme.NoActionBar" />
+        <activity
+            android:name="com.ipay.IpayAcitivity"
+            android:configChanges="orientation|screenSize" />
+        <activity
+            android:name="com.ipay.IpayAcitivityR"
+            android:configChanges="orientation|screenSize" />
+        <activity
+            android:name=".ui_Member.m_MemberList.MemberList"
+            android:label="@string/title_activity_member_list"
+            android:theme="@style/AppTheme.NoActionBar" />
+        <activity
+            android:name=".ui_Item.ItemListing"
+            android:label="@string/title_activity_item_listing"
+            android:theme="@style/AppTheme.NoActionBar" />
+        <activity
+            android:name=".ui_ItemGroup.ItemGroupList"
+            android:label="@string/title_activity_item_group_list"
+            android:theme="@style/AppTheme.NoActionBar" />
+        <activity android:name=".m_Ipay88.Merchant.MerchantScan" />
+
+        <activity android:name=".m_Ipay88.Merchant.MerchantScan2" />
+
+        <activity android:name=".m_Ipay88.User.UserScan" />
+        <activity
+            android:name=".ui_Dashboard.Dashboard"
+            android:label="@string/title_activity_dashboard"
+            android:theme="@style/AppTheme.NoActionBar" />
+        <activity android:name=".m_Ipay88.PaymentResult" />
+        <meta-data
+            android:name="com.google.android.gms.vision.DEPENDENCIES"
+            android:value="barcode" />
+
+        <receiver android:name=".m_ServiceSync.AutoStartOut">
+            <intent-filter>
+                <action android:name="android.intent.action.BOOT_COMPLETED" />
+            </intent-filter>
+        </receiver>
+
+        <receiver android:name=".m_ServiceSync.AutoStartIn">
+            <intent-filter>
+                <action android:name="android.intent.action.BOOT_COMPLETED" />
+            </intent-filter>
+        </receiver>
+
+        <receiver
+            android:name=".m_Connection.ConnectivityReceiver"
+            android:enabled="true">
+            <intent-filter>
+                <action android:name="android.net.conn.CONNECTIVITY_CHANGE" />
+            </intent-filter>
+        </receiver>
+
+        <service android:name=".m_ServiceSync.ServiceSync" />
+        <service android:name=".m_ServiceSync.ServiceSyncIN" />
+    </application>
+    <uses-feature
+        android:name="android.hardware.nfc"
+        android:required="true" />
+    <uses-feature
+        android:name="android.hardware.camera"
+        android:required="true" />
+    <uses-feature android:name="android.hardware.camera.autofocus" />
+    <uses-permission android:name="android.permission.INTERNET" />
+    <uses-permission android:name="android.permission.READ_PHONE_STATE" />
+    <uses-permission android:name="android.permission.BLUETOOTH" />
+    <uses-permission android:name="android.permission.BLUETOOTH_ADMIN" />
+    <uses-permission android:name="android.permission.ACCESS_WIFI_STATE" />
+    <uses-permission android:name="android.permission.VIBRATE" />
+
+    <uses-permission android:name="android.permission.WRITE_EXTERNAL_STORAGE" />
+    <uses-permission android:name="android.permission.SYSTEM_ALERT_WINDOW" />
+
+    <uses-permission android:name="android.permission.NFC" />
+
+    <uses-permission android:name="android.permission.ACCESS_NETWORK_STATE" />
+
+    <uses-permission android:name="android.permission.CAMERA" />
+
+</manifest>

@@ -1,0 +1,453 @@
+<?xml version="1.0" encoding="utf-8"?>
+<android.support.constraint.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context=".ui_TopUpNFC.TopUpNFC">
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:layout_margin="10dp"
+        android:orientation="vertical"
+        android:weightSum="1">
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="0dp"
+            android:layout_weight="1"
+            android:weightSum="1"
+            android:orientation="horizontal"
+            android:id="@+id/lnBalance"
+            android:gravity="center"
+            android:visibility="visible">
+
+            <ImageView
+                android:layout_width="0dp"
+                android:layout_height="wrap_content"
+                android:src="@drawable/home_page_icon"
+                android:contentDescription="@string/app_name"
+                android:layout_weight="0.8"/>
+
+        </LinearLayout>
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="0dp"
+            android:layout_weight="1"
+            android:weightSum="1"
+            android:orientation="vertical"
+            android:id="@+id/lnTopUp"
+            android:visibility="gone">
+
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="0dp"
+                android:layout_weight="0.1"
+                android:weightSum="2"
+                android:orientation="horizontal"
+                android:gravity="center"
+                android:layout_marginTop="4dp"
+                android:layout_marginBottom="4dp">
+
+                <TextView
+                    android:layout_width="0dp"
+                    android:layout_height="match_parent"
+                    android:layout_weight="0.7"
+                    android:text="Customer Code"
+                    android:textColor="@color/colorBlack"
+                    android:textSize="14sp"
+                    android:gravity="left|center"
+                    android:layout_marginLeft="2dp"
+                    android:layout_marginRight="2dp" />
+
+                <TextView
+                    android:layout_width="0dp"
+                    android:layout_height="match_parent"
+                    android:layout_weight="0.7"
+                    android:text="CusCode"
+                    android:textColor="@color/colorBlack"
+                    android:textSize="14sp"
+                    android:gravity="left|center"
+                    android:id="@+id/txtCusCode"/>
+
+            </LinearLayout>
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="0dp"
+                android:layout_weight="0.1"
+                android:weightSum="2"
+                android:orientation="horizontal"
+                android:gravity="center"
+                android:layout_marginTop="4dp"
+                android:layout_marginBottom="4dp">
+
+                <TextView
+                    android:layout_width="0dp"
+                    android:layout_height="match_parent"
+                    android:layout_weight="0.7"
+                    android:text="Customer Name"
+                    android:textColor="@color/colorBlack"
+                    android:textSize="14sp"
+                    android:gravity="left|center"
+                    android:layout_marginLeft="2dp"
+                    android:layout_marginRight="2dp" />
+
+                <TextView
+                    android:layout_width="0dp"
+                    android:layout_height="match_parent"
+                    android:layout_weight="0.7"
+                    android:text="Name of Customer"
+                    android:textColor="@color/colorBlack"
+                    android:textSize="14sp"
+                    android:gravity="left|center"
+                    android:id="@+id/txtCusName"/>
+
+            </LinearLayout>
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="0dp"
+                android:layout_weight="0.1"
+                android:weightSum="2"
+                android:orientation="horizontal"
+                android:gravity="center"
+                android:layout_marginTop="4dp"
+                android:layout_marginBottom="4dp">
+
+                <TextView
+                    android:layout_width="0dp"
+                    android:layout_height="match_parent"
+                    android:layout_weight="0.7"
+                    android:text="Handphone No."
+                    android:textColor="@color/colorBlack"
+                    android:textSize="14sp"
+                    android:gravity="left|center"
+                    android:layout_marginLeft="2dp"
+                    android:layout_marginRight="2dp" />
+
+                <TextView
+                    android:layout_width="0dp"
+                    android:layout_height="match_parent"
+                    android:layout_weight="0.7"
+                    android:text="01xxx"
+                    android:textColor="@color/colorBlack"
+                    android:textSize="14sp"
+                    android:gravity="left|center"
+                    android:id="@+id/txtContactTel"/>
+
+            </LinearLayout>
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="0dp"
+                android:layout_weight="0.1"
+                android:weightSum="2"
+                android:orientation="horizontal"
+                android:gravity="center"
+                android:layout_marginTop="4dp"
+                android:layout_marginBottom="4dp">
+
+                <TextView
+                    android:layout_width="0dp"
+                    android:layout_height="match_parent"
+                    android:layout_weight="0.7"
+                    android:text="Balance"
+                    android:textColor="@color/colorBlack"
+                    android:textSize="14sp"
+                    android:gravity="left|center"
+                    android:layout_marginLeft="2dp"
+                    android:layout_marginRight="2dp" />
+
+                <TextView
+                    android:layout_width="0dp"
+                    android:layout_height="match_parent"
+                    android:layout_weight="0.7"
+                    android:text="RMxxxx"
+                    android:textColor="@color/colorBlack"
+                    android:textSize="14sp"
+                    android:gravity="left|center"
+                    android:id="@+id/txtBalance"/>
+
+            </LinearLayout>
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="0dp"
+                android:layout_weight="0.1"
+                android:weightSum="2"
+                android:orientation="horizontal"
+                android:gravity="center"
+                android:layout_marginTop="4dp"
+                android:layout_marginBottom="4dp">
+
+                <TextView
+                    android:layout_width="0dp"
+                    android:layout_height="match_parent"
+                    android:layout_weight="0.7"
+                    android:text="LastTrnDoc1No"
+                    android:textColor="@color/colorBlack"
+                    android:textSize="14sp"
+                    android:gravity="left|center"
+                    android:layout_marginLeft="2dp"
+                    android:layout_marginRight="2dp" />
+
+                <TextView
+                    android:layout_width="0dp"
+                    android:layout_height="match_parent"
+                    android:layout_weight="0.7"
+                    android:text="#123xxxx"
+                    android:textColor="@color/colorBlack"
+                    android:textSize="14sp"
+                    android:gravity="left|center"
+                    android:id="@+id/txtLastTrnDoc1No"/>
+
+            </LinearLayout>
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="0dp"
+                android:layout_weight="0.1"
+                android:weightSum="2"
+                android:orientation="horizontal"
+                android:gravity="center"
+                android:layout_marginTop="4dp"
+                android:layout_marginBottom="4dp">
+
+                <TextView
+                    android:layout_width="0dp"
+                    android:layout_height="match_parent"
+                    android:layout_weight="0.7"
+                    android:text="LastTrnType"
+                    android:textColor="@color/colorBlack"
+                    android:textSize="14sp"
+                    android:gravity="left|center"
+                    android:layout_marginLeft="2dp"
+                    android:layout_marginRight="2dp" />
+
+                <TextView
+                    android:layout_width="0dp"
+                    android:layout_height="match_parent"
+                    android:layout_weight="0.7"
+                    android:text="Top Up"
+                    android:textColor="@color/colorBlack"
+                    android:textSize="14sp"
+                    android:gravity="left|center"
+                    android:id="@+id/txtLastTrnType"/>
+
+            </LinearLayout>
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="0dp"
+                android:layout_weight="0.1"
+                android:weightSum="2"
+                android:orientation="horizontal"
+                android:gravity="center"
+                android:layout_marginTop="4dp"
+                android:layout_marginBottom="4dp">
+
+                <TextView
+                    android:layout_width="0dp"
+                    android:layout_height="match_parent"
+                    android:layout_weight="0.7"
+                    android:text="LastTrnDateTime"
+                    android:textColor="@color/colorBlack"
+                    android:textSize="14sp"
+                    android:gravity="left|center"
+                    android:layout_marginLeft="2dp"
+                    android:layout_marginRight="2dp" />
+
+                <TextView
+                    android:layout_width="0dp"
+                    android:layout_height="match_parent"
+                    android:layout_weight="0.7"
+                    android:text="dd/mm/yyyy"
+                    android:textColor="@color/colorBlack"
+                    android:textSize="14sp"
+                    android:gravity="left|center"
+                    android:id="@+id/txtLastTrnDateTime"/>
+
+            </LinearLayout>
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="0dp"
+                android:layout_weight="0.1"
+                android:weightSum="2"
+                android:orientation="horizontal"
+                android:gravity="center"
+                android:layout_marginTop="4dp"
+                android:layout_marginBottom="4dp">
+
+                <TextView
+                    android:layout_width="0dp"
+                    android:layout_height="match_parent"
+                    android:layout_weight="0.7"
+                    android:text="LastTrnAmount"
+                    android:textColor="@color/colorBlack"
+                    android:textSize="14sp"
+                    android:gravity="left|center"
+                    android:layout_marginLeft="2dp"
+                    android:layout_marginRight="2dp" />
+
+                <TextView
+                    android:layout_width="0dp"
+                    android:layout_height="match_parent"
+                    android:layout_weight="0.7"
+                    android:text="RMxxxx"
+                    android:textColor="@color/colorBlack"
+                    android:textSize="14sp"
+                    android:gravity="left|center"
+                    android:id="@+id/txtLastTrnAmount"/>
+
+            </LinearLayout>
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="0dp"
+                android:layout_weight="0.1"
+                android:weightSum="2"
+                android:orientation="horizontal"
+                android:gravity="center"
+                android:layout_marginTop="4dp"
+                android:layout_marginBottom="4dp">
+
+                <TextView
+                    android:layout_width="0dp"
+                    android:layout_height="match_parent"
+                    android:layout_weight="0.7"
+                    android:text="Top Up Amount"
+                    android:textColor="@color/colorBlack"
+                    android:textSize="14sp"
+                    android:gravity="left|center"
+                    android:layout_marginLeft="2dp"
+                    android:layout_marginRight="2dp" />
+
+                <TextView
+                    android:layout_width="0dp"
+                    android:layout_height="match_parent"
+                    android:layout_weight="0.3"
+                    android:text="RM"
+                    android:textColor="@color/colorBlack"
+                    android:textSize="14sp"
+                    android:gravity="center"
+                    android:layout_marginLeft="2dp"
+                    android:layout_marginRight="2dp"
+                    android:id="@+id/txtCurCode"/>
+
+                <EditText
+                    android:layout_width="0dp"
+                    android:layout_height="match_parent"
+                    android:layout_weight="0.7"
+                    android:hint="0.00"
+                    android:textColor="@color/colorBlack"
+                    android:textSize="14sp"
+                    android:gravity="left|center"
+                    android:id="@+id/txtTopUpAmount"
+                    android:paddingLeft="6dp"
+                    android:paddingRight="6dp"
+                    android:background="@drawable/border"/>
+
+            </LinearLayout>
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="0dp"
+                android:layout_weight="0.1"
+                android:weightSum="2"
+                android:orientation="horizontal"
+                android:gravity="center"
+                android:layout_marginTop="4dp"
+                android:layout_marginBottom="4dp">
+
+
+                <Button
+                    android:layout_width="0dp"
+                    android:layout_height="match_parent"
+                    android:layout_weight="0.7"
+                    android:background="@drawable/edborder"
+                    android:textColor="@color/colorBlack"
+                    android:text="Cancel"
+                    android:layout_marginLeft="4dp"
+                    android:layout_marginRight="4dp"
+                    android:id="@+id/btnCancel"/>
+
+                <Button
+                    android:layout_width="0dp"
+                    android:layout_height="match_parent"
+                    android:layout_weight="0.7"
+                    android:background="@color/color_warning"
+                    android:textColor="@color/colorWhite"
+                    android:text="Confirm"
+                    android:layout_marginLeft="4dp"
+                    android:layout_marginRight="4dp"
+                    android:id="@+id/btnConfirm"/>
+
+            </LinearLayout>
+
+        </LinearLayout>
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="0dp"
+            android:layout_weight="1"
+            android:weightSum="1"
+            android:orientation="vertical"
+            android:id="@+id/lnAfterTopUp"
+            android:visibility="gone">
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="0dp"
+                android:layout_weight="0.1"
+                android:weightSum="2"
+                android:orientation="horizontal"
+                android:gravity="center"
+                android:layout_marginTop="4dp"
+                android:layout_marginBottom="4dp"
+                android:visibility="visible">
+
+                <TextView
+                    android:layout_width="0dp"
+                    android:layout_height="match_parent"
+                    android:layout_weight="0.7"
+                    android:text="New Card Balance"
+                    android:textColor="@color/colorBlack"
+                    android:textSize="14sp"
+                    android:gravity="left|center"
+                    android:layout_marginLeft="2dp"
+                    android:layout_marginRight="2dp" />
+
+                <TextView
+                    android:layout_width="0dp"
+                    android:layout_height="match_parent"
+                    android:layout_weight="0.3"
+                    android:text="RM"
+                    android:textColor="@color/colorBlack"
+                    android:textSize="14sp"
+                    android:gravity="center"
+                    android:layout_marginLeft="2dp"
+                    android:layout_marginRight="2dp"
+                    android:id="@+id/txtCurCode2"/>
+
+                <TextView
+                    android:layout_width="0dp"
+                    android:layout_height="match_parent"
+                    android:layout_weight="0.7"
+                    android:text="xxxxx"
+                    android:textColor="@color/colorBlack"
+                    android:textSize="14sp"
+                    android:gravity="left|center"
+                    android:id="@+id/txtNewBalance"/>
+
+            </LinearLayout>
+
+        </LinearLayout>
+
+    </LinearLayout>
+
+</android.support.constraint.ConstraintLayout>

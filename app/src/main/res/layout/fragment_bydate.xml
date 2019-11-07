@@ -1,0 +1,159 @@
+<?xml version="1.0" encoding="utf-8"?>
+<android.support.constraint.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:id="@+id/constraintLayout"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent">
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:padding="10dp"
+        android:orientation="vertical"
+        android:weightSum="1">
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="0dp"
+                android:layout_weight="0.1"
+                android:orientation="horizontal"
+                android:weightSum="1"
+                android:layout_marginTop="2dp"
+                android:layout_marginBottom="2dp">
+
+                <Spinner
+                    android:layout_width="0dp"
+                    android:layout_height="match_parent"
+                    android:layout_weight="0.5"
+                    android:text="Date"
+                    android:textStyle="bold"
+                    android:textColor="@color/colorBlack"
+                    android:gravity="left|center"
+                    android:textSize="14sp"
+                    android:paddingLeft="4dp"
+                    android:paddingRight="4dp"
+                    android:id="@+id/spBranch"
+                    android:background="@drawable/border2"/>
+
+                <Spinner
+                    android:layout_width="0dp"
+                    android:layout_height="match_parent"
+                    android:layout_weight="0.5"
+                    android:textStyle="bold"
+                    android:textColor="@color/colorBlack"
+                    android:gravity="left|center"
+                    android:textSize="14sp"
+                    android:paddingLeft="4dp"
+                    android:paddingRight="4dp"
+                    android:id="@+id/spDate"
+                    android:background="@drawable/border2"/>
+
+            </LinearLayout>
+
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="0dp"
+                android:layout_weight="0.1"
+                android:orientation="horizontal"
+                android:weightSum="1"
+                android:layout_marginTop="2dp"
+                android:layout_marginBottom="2dp">
+
+                <TextView
+                    android:layout_width="0dp"
+                    android:layout_height="match_parent"
+                    android:layout_weight="0.5"
+                    android:text="Date"
+                    android:textStyle="bold"
+                    android:textColor="@color/colorBlack"
+                    android:gravity="left|center"
+                    android:textSize="16sp"
+                    android:paddingLeft="4dp"
+                    android:paddingRight="4dp"
+                    android:id="@+id/txtDateFrom"
+                    android:background="@drawable/border2"/>
+
+                <TextView
+                    android:layout_width="0dp"
+                    android:layout_height="match_parent"
+                    android:layout_weight="0.5"
+                    android:text="Date"
+                    android:textStyle="bold"
+                    android:textColor="@color/colorBlack"
+                    android:gravity="left|center"
+                    android:textSize="16sp"
+                    android:paddingLeft="4dp"
+                    android:paddingRight="4dp"
+                    android:id="@+id/txtDateTo"
+                    android:background="@drawable/border2"/>
+
+            </LinearLayout>
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="0dp"
+                android:layout_weight="0.80"
+                android:layout_marginTop="2dp"
+                android:layout_marginBottom="2dp"
+                android:weightSum="1"
+                android:orientation="horizontal">
+
+                <LinearLayout
+                    android:layout_width="0dp"
+                    android:layout_height="match_parent"
+                    android:layout_weight="1">
+
+                    <android.support.v7.widget.RecyclerView
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:id="@+id/rvBranch">
+
+                    </android.support.v7.widget.RecyclerView>
+
+                </LinearLayout>
+
+            </LinearLayout>
+
+          <!--  <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="0dp"
+                android:layout_weight="0.15"
+                android:layout_marginTop="2dp"
+                android:layout_marginBottom="2dp"
+                android:weightSum="1"
+                android:orientation="horizontal"
+                android:id="@+id/lnTotal">
+
+                <TextView
+                    android:layout_width="0dp"
+                    android:layout_height="match_parent"
+                    android:gravity="left|center"
+                    android:textColor="@color/colorBlack"
+                    android:textSize="20sp"
+                    android:text="Total Sales"
+                    android:paddingLeft="3dp"
+                    android:layout_weight="0.5"
+                    android:textStyle="normal" />
+
+                <TextView
+                    android:id="@+id/txtTotalSales"
+                    android:layout_width="0dp"
+                    android:layout_height="match_parent"
+                    android:gravity="right|center"
+                    android:textColor="@color/colorSuccess2"
+                    android:textSize="24sp"
+                    android:text="Total"
+                    android:layout_weight="0.5"
+                    android:textStyle="bold"
+                    android:paddingRight="4dp"
+                    android:paddingLeft="4dp"/>
+
+            </LinearLayout>-->
+
+
+    </LinearLayout>
+
+
+</android.support.constraint.ConstraintLayout>

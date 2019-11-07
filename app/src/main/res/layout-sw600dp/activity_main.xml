@@ -1,0 +1,525 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:id="@+id/activity_main"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:layout_margin="20dp"
+    tools:context="skybiz.com.posoffline.MainActivity">
+    
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:weightSum="1"
+        android:orientation="horizontal"
+        android:gravity="center">
+
+        <LinearLayout
+            android:layout_width="0dp"
+            android:layout_height="wrap_content"
+            android:layout_weight="0.5"
+            android:layout_gravity="center"
+            android:paddingBottom="6dp"
+            android:paddingLeft="4dp"
+            android:paddingRight="4dp"
+            android:orientation="vertical"
+            android:weightSum="15"
+            android:paddingTop="6dp">
+    
+            <Button
+                android:id="@+id/btnDashboard"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_weight="1"
+                android:text="DASHBOARD"
+                android:layout_marginBottom="2dp"
+                android:layout_marginTop="2dp"
+                android:textColor="@android:color/background_light"
+                android:background="#1e88e5"
+                android:textSize="24sp"
+                android:textStyle="normal|bold" />
+    
+            <Button
+                android:id="@+id/btnSalesOrder"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_weight="1"
+                android:text="SALES ORDER"
+                android:layout_marginBottom="2dp"
+                android:layout_marginTop="2dp"
+                android:textColor="@android:color/background_light"
+                android:background="#1e88e5"
+               android:textSize="24sp"
+                android:textStyle="normal|bold" />
+    
+            <Button
+                android:id="@+id/btnCashReceipt"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_weight="1"
+                android:text="CASH RECEIPT"
+                android:layout_marginBottom="2dp"
+                android:layout_marginTop="2dp"
+                android:textColor="@android:color/background_light"
+                android:background="#1e88e5"
+               android:textSize="24sp"
+                android:textStyle="normal|bold" />
+    
+            <Button
+                android:id="@+id/btnQuickCash"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_weight="1"
+                android:text="QUICK CASH"
+                android:layout_marginBottom="2dp"
+                android:layout_marginTop="2dp"
+                android:textColor="@android:color/background_light"
+                android:background="#1e88e5"
+               android:textSize="24sp"
+                android:textStyle="normal|bold" />
+    
+            <Button
+                android:id="@+id/btnCreditNote"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_weight="1"
+                android:text="CREDIT NOTE"
+                android:layout_marginBottom="2dp"
+                android:layout_marginTop="2dp"
+                android:textColor="@android:color/background_light"
+                android:background="#1e88e5"
+               android:textSize="24sp"
+                android:textStyle="normal|bold" />
+    
+            <Button
+                android:id="@+id/btnService"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:visibility="visible"
+                android:layout_weight="1"
+                android:text="SERVICE"
+                android:layout_marginBottom="2dp"
+                android:layout_marginTop="2dp"
+                android:textColor="@android:color/background_light"
+                android:background="#1e88e5"
+               android:textSize="24sp"
+                android:textStyle="normal|bold" />
+    
+            <Button
+                android:id="@+id/btnItem"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:visibility="visible"
+                android:layout_weight="1"
+                android:text="Item"
+                android:layout_marginBottom="2dp"
+                android:layout_marginTop="2dp"
+                android:textColor="@android:color/background_light"
+                android:background="#1e88e5"
+               android:textSize="24sp"
+                android:textStyle="normal|bold" />
+    
+            <Button
+                android:id="@+id/btnItemGroup"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:visibility="visible"
+                android:layout_weight="1"
+                android:text="Item Group"
+                android:layout_marginBottom="2dp"
+                android:layout_marginTop="2dp"
+                android:textColor="@android:color/background_light"
+                android:background="#1e88e5"
+               android:textSize="24sp"
+                android:textStyle="normal|bold" />
+    
+            <Button
+                android:id="@+id/btnMember"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:visibility="visible"
+                android:layout_weight="1"
+                android:text="Member"
+                android:layout_marginBottom="2dp"
+                android:layout_marginTop="2dp"
+                android:textColor="@android:color/background_light"
+                android:background="#1e88e5"
+               android:textSize="24sp"
+                android:textStyle="normal|bold" />
+    
+    
+    
+            <Button
+                android:id="@+id/btnReport"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginBottom="2dp"
+                android:layout_marginTop="2dp"
+                android:layout_weight="1"
+                android:text="REPORTS"
+               android:textSize="24sp"
+                android:textStyle="normal|bold"
+                android:background="#1e88e5"
+                android:textColor="@android:color/background_light" />
+    
+    
+            <Button
+                android:id="@+id/btnSync"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginBottom="2dp"
+                android:layout_marginTop="2dp"
+                android:layout_weight="1"
+                android:text="Synchronize"
+               android:textSize="24sp"
+                android:textStyle="normal|bold"
+                android:background="#1e88e5"
+                android:textColor="@android:color/background_light" />
+    
+            <Button
+                android:id="@+id/btnUpdateNFC"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginBottom="2dp"
+                android:layout_marginTop="2dp"
+                android:layout_weight="1"
+                android:text="Update NFC"
+               android:textSize="24sp"
+                android:textStyle="normal|bold"
+                android:background="#1e88e5"
+                android:textColor="@android:color/background_light" />
+    
+            <Button
+                android:id="@+id/btnRegisterNFC"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginBottom="2dp"
+                android:layout_marginTop="2dp"
+                android:layout_weight="1"
+                android:text="Issue Gift Card"
+               android:textSize="24sp"
+                android:textStyle="normal|bold"
+                android:background="#1e88e5"
+                android:textColor="@android:color/background_light" />
+    
+            <Button
+                android:id="@+id/btnTopUpNFC"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginBottom="2dp"
+                android:layout_marginTop="2dp"
+                android:layout_weight="1"
+                android:text="Top Up Gift Card"
+               android:textSize="24sp"
+                android:textStyle="normal|bold"
+                android:background="#1e88e5"
+                android:textColor="@android:color/background_light" />
+    
+            <Button
+                android:id="@+id/btnSetting"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginBottom="2dp"
+                android:layout_marginTop="2dp"
+                android:layout_weight="1"
+                android:text="SETTING"
+               android:textSize="24sp"
+                android:textStyle="normal|bold"
+                android:background="#1e88e5"
+                android:textColor="@android:color/background_light" />
+    
+        </LinearLayout>
+
+    </LinearLayout>
+
+    <!-- <LinearLayout
+         android:layout_width="match_parent"
+         android:layout_height="match_parent"
+         android:orientation="vertical"
+         android:weightSum="7">
+ 
+         <LinearLayout
+             android:layout_width="match_parent"
+             android:layout_height="0dp"
+             android:layout_weight="1"
+             android:weightSum="2"
+             android:orientation="horizontal"
+             android:layout_marginTop="2dp"
+             android:layout_marginBottom="2dp">
+ 
+             <Button
+                 android:id="@+id/btnDashboard"
+                 android:layout_width="0dp"
+                 android:layout_height="match_parent"
+                 android:layout_weight="1"
+                 android:text="DASHBOARD"
+                 android:layout_marginLeft="4dp"
+                 android:layout_marginRight="4dp"
+                 android:textColor="@color/colorWhite"
+                 android:background="#1e88e5"
+                 android:textSize="24sp"
+                 android:textStyle="normal|bold" />
+ 
+             <Button
+                 android:id="@+id/btnSalesOrder"
+                 android:layout_width="0dp"
+                 android:layout_height="match_parent"
+                 android:layout_weight="1"
+                 android:text="SALES ORDER"
+                 android:layout_marginLeft="4dp"
+                 android:layout_marginRight="4dp"
+                 android:textColor="@color/colorWhite"
+                 android:background="#1e88e5"
+                 android:textSize="24sp"
+                 android:textStyle="normal|bold" />
+ 
+         </LinearLayout>
+ 
+         <LinearLayout
+             android:layout_width="match_parent"
+             android:layout_height="0dp"
+             android:layout_weight="1"
+             android:weightSum="2"
+             android:orientation="horizontal"
+             android:layout_marginTop="2dp"
+             android:layout_marginBottom="2dp">
+ 
+             <Button
+                 android:id="@+id/btnCashReceipt"
+                 android:layout_width="0dp"
+                 android:layout_height="match_parent"
+                 android:layout_weight="1"
+                 android:text="CASH RECEIPT"
+                 android:layout_marginLeft="4dp"
+                 android:layout_marginRight="4dp"
+                 android:textColor="@color/colorWhite"
+                 android:background="#1e88e5"
+                 android:textSize="24sp"
+                 android:textStyle="normal|bold" />
+ 
+             <Button
+                 android:id="@+id/btnCreditNote"
+                 android:layout_width="0dp"
+                 android:layout_height="match_parent"
+                 android:layout_weight="1"
+                 android:text="CREDIT NOTE"
+                 android:layout_marginLeft="4dp"
+                 android:layout_marginRight="4dp"
+                 android:textColor="@color/colorWhite"
+                 android:background="#1e88e5"
+                 android:textSize="24sp"
+                 android:textStyle="normal|bold" />
+ 
+         </LinearLayout>
+ 
+         <LinearLayout
+             android:layout_width="match_parent"
+             android:layout_height="0dp"
+             android:layout_weight="1"
+             android:weightSum="2"
+             android:orientation="horizontal"
+             android:layout_marginTop="2dp"
+             android:layout_marginBottom="2dp">
+ 
+             <Button
+                 android:id="@+id/btnService"
+                 android:layout_width="0dp"
+                 android:layout_height="match_parent"
+                 android:visibility="visible"
+                 android:layout_weight="1"
+                 android:text="SERVICE"
+                 android:layout_marginLeft="4dp"
+                 android:layout_marginRight="4dp"
+                 android:textColor="@color/colorWhite"
+                 android:background="#1e88e5"
+                 android:textSize="24sp"
+                 android:textStyle="normal|bold" />
+ 
+             <Button
+                 android:id="@+id/btnItem"
+                 android:layout_width="0dp"
+                 android:layout_height="match_parent"
+                 android:visibility="visible"
+                 android:layout_weight="1"
+                 android:text="Item"
+                 android:layout_marginLeft="4dp"
+                 android:layout_marginRight="4dp"
+                 android:textColor="@color/colorWhite"
+                 android:background="#1e88e5"
+                 android:textSize="24sp"
+                 android:textStyle="normal|bold" />
+ 
+         </LinearLayout>
+ 
+         <LinearLayout
+             android:layout_width="match_parent"
+             android:layout_height="0dp"
+             android:layout_weight="1"
+             android:weightSum="2"
+             android:orientation="horizontal"
+             android:layout_marginTop="2dp"
+             android:layout_marginBottom="2dp">
+ 
+             <Button
+                 android:id="@+id/btnItemGroup"
+                 android:layout_width="0dp"
+                 android:layout_height="match_parent"
+                 android:visibility="visible"
+                 android:layout_weight="1"
+                 android:text="Item Group"
+                 android:layout_marginLeft="4dp"
+                 android:layout_marginRight="4dp"
+                 android:textColor="@color/colorWhite"
+                 android:background="#1e88e5"
+                 android:textSize="24sp"
+                 android:textStyle="normal|bold" />
+ 
+             <Button
+                 android:id="@+id/btnMember"
+                 android:layout_width="0dp"
+                 android:layout_height="match_parent"
+                 android:visibility="visible"
+                 android:layout_weight="1"
+                 android:text="Member"
+                 android:layout_marginLeft="4dp"
+                 android:layout_marginRight="4dp"
+                 android:textColor="@color/colorWhite"
+                 android:background="#1e88e5"
+                 android:textSize="24sp"
+                 android:textStyle="normal|bold" />
+ 
+         </LinearLayout>
+ 
+         <LinearLayout
+             android:layout_width="match_parent"
+             android:layout_height="0dp"
+             android:layout_weight="1"
+             android:weightSum="2"
+             android:orientation="horizontal"
+             android:layout_marginTop="2dp"
+             android:layout_marginBottom="2dp">
+ 
+ 
+             <Button
+                 android:id="@+id/btnReport"
+                 android:layout_width="0dp"
+                 android:layout_height="match_parent"
+                 android:layout_weight="1"
+                 android:text="REPORTS"
+                 android:textSize="24sp"
+                 android:textStyle="normal|bold"
+                 android:background="#1e88e5"
+                 android:layout_marginLeft="4dp"
+                 android:layout_marginRight="4dp"
+                 android:textColor="@color/colorWhite" />
+ 
+             <Button
+                 android:id="@+id/btnQuickCash"
+                 android:layout_width="0dp"
+                 android:layout_height="match_parent"
+                 android:layout_weight="1"
+                 android:text="Quick Cash"
+                 android:textSize="24sp"
+                 android:textStyle="normal|bold"
+                 android:background="#1e88e5"
+                 android:layout_marginLeft="4dp"
+                 android:layout_marginRight="4dp"
+                 android:textColor="@color/colorWhite" />
+ 
+         </LinearLayout>
+ 
+         <LinearLayout
+             android:layout_width="match_parent"
+             android:layout_height="0dp"
+             android:layout_weight="1"
+             android:weightSum="2"
+             android:orientation="horizontal"
+             android:layout_marginTop="2dp"
+             android:layout_marginBottom="2dp">
+ 
+ 
+             <Button
+                 android:id="@+id/btnRegisterNFC"
+                 android:layout_width="0dp"
+                 android:layout_height="match_parent"
+                 android:layout_marginRight="4dp"
+                 android:layout_marginLeft="4dp"
+                 android:layout_weight="1"
+                 android:text="Issue Gift Card"
+                 android:textSize="24sp"
+                 android:textStyle="normal|bold"
+                 android:background="#1e88e5"
+                 android:textColor="@color/colorWhite" />
+ 
+             <Button
+                 android:id="@+id/btnTopUpNFC"
+                 android:layout_width="0dp"
+                 android:layout_height="match_parent"
+                 android:layout_marginRight="4dp"
+                 android:layout_marginLeft="4dp"
+                 android:layout_weight="1"
+                 android:text="Top Up Gift Card"
+                 android:textSize="24sp"
+                 android:textStyle="normal|bold"
+                 android:background="#1e88e5"
+                 android:textColor="@color/colorWhite" />
+ 
+             <Button
+                 android:id="@+id/btnUpdateNFC"
+                 android:layout_width="0dp"
+                 android:layout_height="match_parent"
+                 android:layout_marginRight="4dp"
+                 android:layout_marginLeft="4dp"
+                 android:layout_weight="1"
+                 android:text="Update NFC"
+                 android:textSize="24sp"
+                 android:textStyle="normal|bold"
+                 android:background="#1e88e5"
+                 android:textColor="@color/colorWhite"
+                 android:visibility="gone"/>
+ 
+ 
+         </LinearLayout>
+ 
+         <LinearLayout
+             android:layout_width="match_parent"
+             android:layout_height="0dp"
+             android:layout_weight="1"
+             android:weightSum="2"
+             android:orientation="horizontal"
+             android:layout_marginTop="2dp"
+             android:layout_marginBottom="2dp">
+ 
+ 
+ 
+             <Button
+                 android:id="@+id/btnSync"
+                 android:layout_width="0dp"
+                 android:layout_height="match_parent"
+                 android:layout_weight="1"
+                 android:text="Synchronize"
+                 android:textSize="24sp"
+                 android:textStyle="normal|bold"
+                 android:background="#1e88e5"
+                 android:layout_marginLeft="4dp"
+                 android:layout_marginRight="4dp"
+                 android:textColor="@color/colorWhite" />
+ 
+             <Button
+                 android:id="@+id/btnSetting"
+                 android:layout_width="0dp"
+                 android:layout_height="match_parent"
+                 android:layout_marginLeft="4dp"
+                 android:layout_marginRight="4dp"
+                 android:layout_weight="1"
+                 android:text="SETTING"
+                 android:textSize="24sp"
+                 android:textStyle="normal|bold"
+                 android:background="#1e88e5"
+                 android:textColor="@android:color/background_light" />
+ 
+         </LinearLayout>
+ 
+     </LinearLayout>-->
+
+</RelativeLayout>

@@ -1,0 +1,428 @@
+<?xml version="1.0" encoding="utf-8"?>
+<ScrollView xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent" >
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="vertical" >
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="720dp"
+            android:orientation="vertical"
+            android:layout_margin="10dp">
+
+                <LinearLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="0dp"
+                    android:layout_weight="1"
+                    android:orientation="horizontal"
+                    android:layout_marginBottom="10dp"
+                    android:weightSum="2">
+
+                    <TextView
+                        android:layout_width="0dp"
+                        android:layout_height="match_parent"
+                        android:layout_marginRight="2dp"
+                        android:layout_marginLeft="2dp"
+                        android:gravity="left|center"
+                        android:paddingRight="4dp"
+                        android:paddingLeft="4dp"
+                        android:textSize="17sp"
+                        android:layout_weight="1"
+                        android:text="Company Name"/>
+
+                    <EditText
+                        android:layout_width="0dp"
+                        android:layout_height="match_parent"
+                        android:layout_marginRight="2dp"
+                        android:layout_marginLeft="2dp"
+                        android:paddingRight="4dp"
+                        android:paddingLeft="4dp"
+                        android:layout_weight="1"
+                        android:background="@drawable/border"
+                        android:hint="Company Name"
+                        android:id="@+id/txtCompanyName"/>
+
+                </LinearLayout>
+
+                <LinearLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="0dp"
+                    android:layout_weight="1"
+                    android:orientation="horizontal"
+                    android:layout_marginBottom="10dp"
+                    android:weightSum="2">
+
+                    <TextView
+                        android:layout_width="0dp"
+                        android:layout_height="match_parent"
+                        android:layout_marginRight="2dp"
+                        android:layout_marginLeft="2dp"
+                        android:gravity="left|center"
+                        android:paddingRight="4dp"
+                        android:paddingLeft="4dp"
+                        android:textSize="17sp"
+                        android:layout_weight="1"
+                        android:text="Company Name"/>
+
+                    <EditText
+                        android:layout_width="0dp"
+                        android:layout_height="match_parent"
+                        android:layout_marginRight="2dp"
+                        android:layout_marginLeft="2dp"
+                        android:paddingRight="4dp"
+                        android:paddingLeft="4dp"
+                        android:layout_weight="1"
+                        android:background="@drawable/border"
+                        android:hint="Company Code"
+                        android:id="@+id/txtCompanyCode"/>
+
+                </LinearLayout>
+
+                <LinearLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="0dp"
+                    android:layout_weight="1"
+                    android:orientation="horizontal"
+                    android:layout_marginBottom="10dp"
+                    android:weightSum="2">
+
+                    <TextView
+                        android:layout_width="0dp"
+                        android:layout_height="match_parent"
+                        android:layout_marginRight="2dp"
+                        android:layout_marginLeft="2dp"
+                        android:gravity="left|center"
+                        android:paddingRight="4dp"
+                        android:paddingLeft="4dp"
+                        android:textSize="17sp"
+                        android:layout_weight="1"
+                        android:text="GST No"/>
+
+                    <EditText
+                        android:layout_width="0dp"
+                        android:layout_height="match_parent"
+                        android:layout_marginRight="2dp"
+                        android:layout_marginLeft="2dp"
+                        android:paddingRight="4dp"
+                        android:paddingLeft="4dp"
+                        android:layout_weight="1"
+                        android:background="@drawable/border"
+                        android:hint="GST No"
+                        android:id="@+id/txtGSTNo"/>
+
+                </LinearLayout>
+
+                <LinearLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="0dp"
+                    android:layout_weight="2"
+                    android:orientation="horizontal"
+                    android:layout_marginBottom="10dp"
+                    android:weightSum="2">
+
+                    <TextView
+                        android:layout_width="0dp"
+                        android:layout_height="match_parent"
+                        android:layout_marginRight="2dp"
+                        android:layout_marginLeft="2dp"
+                        android:gravity="left|center"
+                        android:paddingRight="4dp"
+                        android:paddingLeft="4dp"
+                        android:textSize="17sp"
+                        android:layout_weight="1"
+                        android:text="Address"/>
+
+                    <EditText
+                        android:layout_width="0dp"
+                        android:layout_height="match_parent"
+                        android:layout_marginRight="2dp"
+                        android:layout_marginLeft="2dp"
+                        android:paddingRight="4dp"
+                        android:paddingLeft="4dp"
+                        android:layout_weight="1"
+                        android:maxLines="4"
+                        android:minLines="3"
+                        android:background="@drawable/border"
+                        android:hint="Address"
+                        android:id="@+id/txtAddress"/>
+
+                </LinearLayout>
+
+                <LinearLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="0dp"
+                    android:layout_weight="1"
+                    android:orientation="horizontal"
+                    android:layout_marginBottom="10dp"
+                    android:weightSum="2">
+
+                    <TextView
+                        android:layout_width="0dp"
+                        android:layout_height="match_parent"
+                        android:layout_marginRight="2dp"
+                        android:layout_marginLeft="2dp"
+                        android:gravity="left|center"
+                        android:paddingRight="4dp"
+                        android:paddingLeft="4dp"
+                        android:textSize="17sp"
+                        android:layout_weight="1"
+                        android:text="Tel"/>
+
+                    <EditText
+                        android:layout_width="0dp"
+                        android:layout_height="match_parent"
+                        android:layout_marginRight="2dp"
+                        android:layout_marginLeft="2dp"
+                        android:paddingRight="4dp"
+                        android:paddingLeft="4dp"
+                        android:layout_weight="1"
+                        android:background="@drawable/border"
+                        android:hint="Tel"
+                        android:id="@+id/txtTel1"/>
+
+                </LinearLayout>
+
+                <LinearLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="0dp"
+                    android:layout_weight="1"
+                    android:orientation="horizontal"
+                    android:layout_marginBottom="10dp"
+                    android:weightSum="2">
+
+                    <TextView
+                        android:layout_width="0dp"
+                        android:layout_height="match_parent"
+                        android:layout_marginRight="2dp"
+                        android:layout_marginLeft="2dp"
+                        android:gravity="left|center"
+                        android:paddingRight="4dp"
+                        android:paddingLeft="4dp"
+                        android:textSize="17sp"
+                        android:layout_weight="1"
+                        android:text="Fax"/>
+
+                    <EditText
+                        android:layout_width="0dp"
+                        android:layout_height="match_parent"
+                        android:layout_marginRight="2dp"
+                        android:layout_marginLeft="2dp"
+                        android:paddingRight="4dp"
+                        android:paddingLeft="4dp"
+                        android:layout_weight="1"
+                        android:background="@drawable/border"
+                        android:hint="Fax"
+                        android:id="@+id/txtFax1"/>
+
+                </LinearLayout>
+
+                <LinearLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="0dp"
+                    android:layout_weight="1"
+                    android:orientation="horizontal"
+                    android:layout_marginBottom="10dp"
+                    android:weightSum="2">
+
+                    <TextView
+                        android:layout_width="0dp"
+                        android:layout_height="match_parent"
+                        android:layout_marginRight="2dp"
+                        android:layout_marginLeft="2dp"
+                        android:gravity="left|center"
+                        android:paddingRight="4dp"
+                        android:paddingLeft="4dp"
+                        android:textSize="17sp"
+                        android:layout_weight="1"
+                        android:text="Town"/>
+
+                    <EditText
+                        android:layout_width="0dp"
+                        android:layout_height="match_parent"
+                        android:layout_weight="1"
+                        android:id="@+id/txtTown"
+                        android:textSize="17sp"
+                        android:hint="Town"
+                        android:paddingLeft="4dp"
+                        android:paddingRight="4dp"
+                        android:background="@drawable/border"/>
+
+                </LinearLayout>
+
+
+                <LinearLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="0dp"
+                    android:layout_weight="1"
+                    android:orientation="horizontal"
+                    android:layout_marginBottom="10dp"
+                    android:weightSum="2">
+
+                    <TextView
+                        android:layout_width="0dp"
+                        android:layout_height="match_parent"
+                        android:layout_marginRight="2dp"
+                        android:layout_marginLeft="2dp"
+                        android:gravity="left|center"
+                        android:paddingRight="4dp"
+                        android:paddingLeft="4dp"
+                        android:textSize="17sp"
+                        android:layout_weight="1"
+                        android:text="State"/>
+
+                    <EditText
+                        android:layout_width="0dp"
+                        android:layout_height="match_parent"
+                        android:layout_weight="1"
+                        android:id="@+id/txtState"
+                        android:textSize="17sp"
+                        android:hint="State"
+                        android:paddingLeft="4dp"
+                        android:paddingRight="4dp"
+                        android:background="@drawable/border"/>
+
+                </LinearLayout>
+
+                <LinearLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="0dp"
+                    android:layout_weight="1"
+                    android:orientation="horizontal"
+                    android:layout_marginBottom="10dp"
+                    android:weightSum="2">
+
+                    <TextView
+                        android:layout_width="0dp"
+                        android:layout_height="match_parent"
+                        android:layout_marginRight="2dp"
+                        android:layout_marginLeft="2dp"
+                        android:gravity="left|center"
+                        android:paddingRight="4dp"
+                        android:paddingLeft="4dp"
+                        android:textSize="17sp"
+                        android:layout_weight="1"
+                        android:text="Country"/>
+
+                    <EditText
+                        android:layout_width="0dp"
+                        android:layout_height="match_parent"
+                        android:layout_weight="1"
+                        android:id="@+id/txtCountry"
+                        android:textSize="17sp"
+                        android:hint="Country"
+                        android:paddingLeft="4dp"
+                        android:paddingRight="4dp"
+                        android:background="@drawable/border"/>
+
+                </LinearLayout>
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="0dp"
+                android:layout_weight="1"
+                android:orientation="horizontal"
+                android:layout_marginBottom="10dp"
+                android:weightSum="2">
+
+                <TextView
+                    android:layout_width="0dp"
+                    android:layout_height="match_parent"
+                    android:layout_marginRight="2dp"
+                    android:layout_marginLeft="2dp"
+                    android:gravity="left|center"
+                    android:paddingRight="4dp"
+                    android:paddingLeft="4dp"
+                    android:textSize="17sp"
+                    android:layout_weight="1"
+                    android:text="Currency Code"/>
+
+                <EditText
+                    android:layout_width="0dp"
+                    android:layout_height="match_parent"
+                    android:layout_weight="1"
+                    android:id="@+id/txtCurCode"
+                    android:textSize="17sp"
+                    android:hint="Currency Code"
+                    android:paddingLeft="4dp"
+                    android:paddingRight="4dp"
+                    android:background="@drawable/border"/>
+
+            </LinearLayout>
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="0dp"
+                android:layout_weight="2"
+                android:orientation="horizontal"
+                android:layout_marginBottom="10dp"
+                android:weightSum="2">
+
+                <TextView
+                    android:layout_width="0dp"
+                    android:layout_height="match_parent"
+                    android:layout_marginRight="2dp"
+                    android:layout_marginLeft="2dp"
+                    android:gravity="left|center"
+                    android:paddingRight="4dp"
+                    android:paddingLeft="4dp"
+                    android:textSize="17sp"
+                    android:layout_weight="1"
+                    android:text="Footer Receipt"/>
+
+                <EditText
+                    android:layout_width="0dp"
+                    android:layout_height="match_parent"
+                    android:layout_weight="1"
+                    android:id="@+id/txtFooterCR"
+                    android:textSize="17sp"
+                    android:hint="Footer Receipt"
+                    android:paddingLeft="4dp"
+                    android:paddingRight="4dp"
+                    android:minLines="3"
+                    android:maxLines="4"
+                    android:background="@drawable/border"/>
+
+            </LinearLayout>
+
+                <LinearLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="0dp"
+                    android:layout_weight="1"
+                    android:orientation="horizontal"
+                    android:layout_marginBottom="4dp"
+                    android:weightSum="2">
+
+                    <Button
+                        android:layout_width="0dp"
+                        android:layout_height="match_parent"
+                        android:layout_marginRight="2dp"
+                        android:layout_marginLeft="2dp"
+                        android:layout_weight="1"
+                        android:background="@color/color_primary"
+                        android:textColor="@color/colorWhite"
+                        android:text="Back"
+                        android:id="@+id/btnBack"/>
+
+                    <Button
+                        android:layout_width="0dp"
+                        android:layout_height="match_parent"
+                        android:layout_marginRight="2dp"
+                        android:layout_marginLeft="2dp"
+                        android:layout_weight="1"
+                        android:background="@color/colorOrange"
+                        android:textColor="@color/colorWhite"
+                        android:text="Save Changes"
+                        android:id="@+id/btnSave"/>
+
+                </LinearLayout>
+
+        </LinearLayout>
+
+    </LinearLayout>
+
+</ScrollView>

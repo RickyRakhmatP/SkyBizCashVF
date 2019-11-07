@@ -1,0 +1,30 @@
+<menu xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    tools:context="skybiz.com.posoffline.ui_Sync.Sync">
+    <item
+        android:id="@+id/mnSetting"
+        android:orderInCategory="100"
+        android:title="@string/mnSetting"
+        app:showAsAction="never" />
+    <item
+        android:id="@+id/mnBackup"
+        android:orderInCategory="100"
+        android:title="@string/mnBackup"
+        app:showAsAction="never" />
+    <item
+        android:id="@+id/mnAdminPassword"
+        android:orderInCategory="100"
+        android:title="@string/mnAdminPassword"
+        app:showAsAction="never" />
+    <item
+        android:id="@+id/mnForceSync"
+        android:orderInCategory="100"
+        android:title="@string/mnForceSync"
+        app:showAsAction="never" />
+    <item
+        android:id="@+id/mnDBManager"
+        android:orderInCategory="100"
+        android:title="Database Manager"
+        app:showAsAction="never" />
+</menu>

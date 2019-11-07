@@ -1,0 +1,20 @@
+<menu xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    tools:context="skybiz.com.posoffline.ui_Service.MService">
+    <item
+    android:id="@+id/mnItem"
+    android:orderInCategory="100"
+    android:title="@string/mnItem"
+    app:showAsAction="never" />
+    <item
+        android:id="@+id/mnOutJS"
+        android:orderInCategory="100"
+        android:title="@string/mnOutJS"
+        app:showAsAction="never" />
+    <item
+        android:id="@+id/mnClosedJS"
+        android:orderInCategory="100"
+        android:title="@string/mnClosedJS"
+        app:showAsAction="never" />
+</menu>

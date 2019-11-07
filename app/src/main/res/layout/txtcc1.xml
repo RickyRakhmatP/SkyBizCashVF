@@ -1,0 +1,12 @@
+<?xml version="1.0" encoding="utf-8"?>
+<TextView
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="180dp"
+    android:layout_height="match_parent"
+    android:textColor="@color/colorBlack"
+    android:layout_marginRight="2dp"
+    android:layout_marginLeft="2dp"
+    android:textSize="20sp"
+    android:textStyle="normal">
+
+</TextView>
